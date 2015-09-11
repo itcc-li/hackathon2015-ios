@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var text: UILabel!
+    @IBAction func buttonClicked(sender: UIButton) {
+        text.text = "Gipfel erklummen"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
