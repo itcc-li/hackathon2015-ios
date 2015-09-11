@@ -14,6 +14,14 @@
 		8B69D0FA1BA2158A0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D0F91BA2158A0073FB52 /* Images.xcassets */; };
 		8B69D0FD1BA2158A0073FB52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */; };
 		8B69D1091BA2158B0073FB52 /* hackathon2015_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D1081BA2158B0073FB52 /* hackathon2015_iosTests.swift */; };
+		8B69D11C1BA2D38E0073FB52 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */; };
+		8B69D11E1BA2D38E0073FB52 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */; };
+		8B69D1201BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D11F1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B69D1241BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D1231BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app */; };
+		8B69D12C1BA2D38E0073FB52 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */; };
+		8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B69D1311BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,35 @@
 			remoteGlobalIDString = 8B69D0E91BA2158A0073FB52;
 			remoteInfo = "hackathon2015-ios";
 		};
+		8B69D1251BA2D38E0073FB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B69D0E21BA2158A0073FB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B69D1221BA2D38E0073FB52;
+			remoteInfo = "hackathon2015-ios WatchKit App";
+		};
+		8B69D12F1BA2D38E0073FB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B69D0E21BA2158A0073FB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B69D1151BA2D38D0073FB52;
+			remoteInfo = "hackathon2015-ios WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B69D1381BA2D38E0073FB52 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B69D1311BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B69D0EA1BA2158A0073FB52 /* hackathon2015-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon2015-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +74,16 @@
 		8B69D1021BA2158B0073FB52 /* hackathon2015-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackathon2015-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B69D1071BA2158B0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B69D1081BA2158B0073FB52 /* hackathon2015_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon2015_iosTests.swift; sourceTree = "<group>"; };
+		8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hackathon2015-ios WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D1191BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D11A1BA2D38E0073FB52 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B69D11F1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B69D1231BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon2015-ios WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D1291BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D12B1BA2D38E0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B69D1131BA2D38D0073FB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +116,8 @@
 			children = (
 				8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */,
 				8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */,
+				8B69D1171BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension */,
+				8B69D1271BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */,
 				8B69D0EB1BA2158A0073FB52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +127,8 @@
 			children = (
 				8B69D0EA1BA2158A0073FB52 /* hackathon2015-ios.app */,
 				8B69D1021BA2158B0073FB52 /* hackathon2015-iosTests.xctest */,
+				8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */,
+				8B69D1231BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +172,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8B69D1171BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */,
+				8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */,
+				8B69D11F1BA2D38E0073FB52 /* Images.xcassets */,
+				8B69D1181BA2D38E0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-ios WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8B69D1181BA2D38E0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1191BA2D38E0073FB52 /* Info.plist */,
+				8B69D11A1BA2D38E0073FB52 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B69D1271BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */,
+				8B69D12D1BA2D38E0073FB52 /* Images.xcassets */,
+				8B69D1281BA2D38E0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-ios WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B69D1281BA2D38E0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1291BA2D38E0073FB52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +220,12 @@
 				8B69D0E61BA2158A0073FB52 /* Sources */,
 				8B69D0E71BA2158A0073FB52 /* Frameworks */,
 				8B69D0E81BA2158A0073FB52 /* Resources */,
+				8B69D1381BA2D38E0073FB52 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B69D1301BA2D38E0073FB52 /* PBXTargetDependency */,
 			);
 			name = "hackathon2015-ios";
 			productName = "hackathon2015-ios";
@@ -153,6 +250,39 @@
 			productReference = 8B69D1021BA2158B0073FB52 /* hackathon2015-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8B69D1151BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D1351BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit Extension" */;
+			buildPhases = (
+				8B69D1121BA2D38D0073FB52 /* Sources */,
+				8B69D1131BA2D38D0073FB52 /* Frameworks */,
+				8B69D1141BA2D38D0073FB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B69D1261BA2D38E0073FB52 /* PBXTargetDependency */,
+			);
+			name = "hackathon2015-ios WatchKit Extension";
+			productName = "hackathon2015-ios WatchKit Extension";
+			productReference = 8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		8B69D1221BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D1321BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit App" */;
+			buildPhases = (
+				8B69D1211BA2D38E0073FB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hackathon2015-ios WatchKit App";
+			productName = "hackathon2015-ios WatchKit App";
+			productReference = 8B69D1231BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +298,12 @@
 					8B69D1011BA2158B0073FB52 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 8B69D0E91BA2158A0073FB52;
+					};
+					8B69D1151BA2D38D0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8B69D1221BA2D38E0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -186,6 +322,8 @@
 			targets = (
 				8B69D0E91BA2158A0073FB52 /* hackathon2015-ios */,
 				8B69D1011BA2158B0073FB52 /* hackathon2015-iosTests */,
+				8B69D1151BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension */,
+				8B69D1221BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +343,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1141BA2D38D0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */,
+				8B69D1241BA2D38E0073FB52 /* hackathon2015-ios WatchKit App.app in Resources */,
+				8B69D1201BA2D38E0073FB52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1211BA2D38E0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D12C1BA2D38E0073FB52 /* Interface.storyboard in Resources */,
+				8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +386,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B69D1121BA2D38D0073FB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D11E1BA2D38E0073FB52 /* NotificationController.swift in Sources */,
+				8B69D11C1BA2D38E0073FB52 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +402,16 @@
 			isa = PBXTargetDependency;
 			target = 8B69D0E91BA2158A0073FB52 /* hackathon2015-ios */;
 			targetProxy = 8B69D1031BA2158B0073FB52 /* PBXContainerItemProxy */;
+		};
+		8B69D1261BA2D38E0073FB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B69D1221BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */;
+			targetProxy = 8B69D1251BA2D38E0073FB52 /* PBXContainerItemProxy */;
+		};
+		8B69D1301BA2D38E0073FB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B69D1151BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension */;
+			targetProxy = 8B69D12F1BA2D38E0073FB52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +430,14 @@
 				8B69D0FC1BA2158A0073FB52 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B69D12B1BA2D38E0073FB52 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -394,6 +578,62 @@
 			};
 			name = Release;
 		};
+		8B69D1331BA2D38E0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		8B69D1341BA2D38E0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		8B69D1361BA2D38E0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8B69D1371BA2D38E0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,6 +659,22 @@
 			buildConfigurations = (
 				8B69D1101BA2158B0073FB52 /* Debug */,
 				8B69D1111BA2158B0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B69D1321BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D1331BA2D38E0073FB52 /* Debug */,
+				8B69D1341BA2D38E0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B69D1351BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D1361BA2D38E0073FB52 /* Debug */,
+				8B69D1371BA2D38E0073FB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
