@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var text: UILabel!
-    @IBAction func buttonClicked(sender: UIButton) {
-        text.text = "Gipfel erklummen"
-    }
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,7 +22,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : UITableViewCell = UITableViewCell()
+        var image : UIImage = UIImage(named: "grauspitz")!
+        cell.imageView!.image = image
+        var textView : UITextView = UITextView()
+        textView.text = "Grauspitz"
+        return cell
+    }
 }
 

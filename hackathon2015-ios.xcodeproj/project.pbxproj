@@ -22,6 +22,7 @@
 		8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 		8B69D1311BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
+		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		8B69D1291BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B69D12B1BA2D38E0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8BBFCA1F1BA424210025A9C1 /* Cell */,
 				8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */,
 				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
 				8B69D0F61BA2158A0073FB52 /* Main.storyboard */,
@@ -208,6 +211,14 @@
 				8B69D1291BA2D38E0073FB52 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BBFCA1F1BA424210025A9C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BBFCA201BA424430025A9C1 /* CustomCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +389,7 @@
 			files = (
 				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
+				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +697,7 @@
 				8B69D10E1BA2158B0073FB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B69D10F1BA2158B0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -693,6 +706,7 @@
 				8B69D1111BA2158B0073FB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B69D1321BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -701,6 +715,7 @@
 				8B69D1341BA2D38E0073FB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B69D1351BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "hackathon2015-ios WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +724,7 @@
 				8B69D1371BA2D38E0073FB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
