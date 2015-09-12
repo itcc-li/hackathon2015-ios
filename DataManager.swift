@@ -11,7 +11,9 @@ import UIKit
 
 class DataManager : NSObject{
     func getData() -> Array<Poi> {
-        var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitue\":9.581263}]"
+        let serverManager = ServerManager()
+        serverManager.getUserToken("simonmeier", first_name: "Simon", last_name: "Meier", email_address: "simon.a.meier@gmail.com")
+        var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitude\":47.052934}]"
         var data: NSData = jsonArray.dataUsingEncoding(NSUTF8StringEncoding)!
         var error: NSError?
         let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0),
@@ -28,9 +30,9 @@ class DataManager : NSObject{
             for json in anyObj as! Array<AnyObject>{
                 poi.name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
                 poi.id  =  (json["id"]  as AnyObject? as? Int) ?? 0
-                poi.description = (json["description"] as? String) ?? "test"
-                poi.longitute = (json["longitute"] as? Float) ?? 0
-                poi.longitute = (json["latitude"] as? Float) ?? 0
+                poi.description = (json["description"] as? String) ?? ""
+                poi.longitude = (json["longitude"] as? Float) ?? 0
+                poi.latitude = (json["latitude"] as? Float) ?? 0
                 list.append(poi)
             }
         }

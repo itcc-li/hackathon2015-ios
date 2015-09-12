@@ -12,8 +12,8 @@ class Poi {
     var id: Int?
     var name: String?
     var description: String?
-    var longitute: Float?
-    var latitute: Float?
+    var longitude: Float?
+    var latitude: Float?
     
     init() {
         
@@ -23,7 +23,7 @@ class Poi {
         self.id = id
         self.name = name
         description = desc
-        longitute = long
-        latitute = lat
+        longitude = long
+        latitude = lat
     }
 }

@@ -24,10 +24,13 @@
 		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
 		8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA231BA442EC0025A9C1 /* DataManager.swift */; };
-		8BBFCA2B1BA44A960025A9C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */; };
-		8BBFCA2D1BA44A980025A9C1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */; };
-		8BBFCA2E1BA44AA10025A9C1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */; };
 		8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA301BA44DA40025A9C1 /* Poi.swift */; };
+		8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */; };
+		8BBFCA351BA45DAB0025A9C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */; };
+		8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */; };
+		8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */; };
+		8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */; };
+		8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +95,13 @@
 		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		8BBFCA231BA442EC0025A9C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		8BBFCA301BA44DA40025A9C1 /* Poi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
+		8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionResult.swift; sourceTree = "<group>"; };
+		8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBFCA2B1BA44A960025A9C1 /* StoreKit.framework in Frameworks */,
-				8BBFCA2D1BA44A980025A9C1 /* GameKit.framework in Frameworks */,
+				8BBFCA351BA45DAB0025A9C1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBFCA2E1BA44AA10025A9C1 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +133,7 @@
 		8B69D0E11BA2158A0073FB52 = {
 			isa = PBXGroup;
 			children = (
-				8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */,
-				8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */,
+				8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */,
 				8BBFCA221BA442DB0025A9C1 /* data */,
 				8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */,
 				8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */,
@@ -156,6 +160,7 @@
 				8BBFCA1F1BA424210025A9C1 /* Cell */,
 				8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */,
 				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
+				8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */,
 				8B69D0F61BA2158A0073FB52 /* Main.storyboard */,
 				8B69D0F91BA2158A0073FB52 /* Images.xcassets */,
 				8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */,
@@ -241,6 +246,10 @@
 			children = (
 				8BBFCA231BA442EC0025A9C1 /* DataManager.swift */,
 				8BBFCA301BA44DA40025A9C1 /* Poi.swift */,
+				8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */,
+				8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */,
+				8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */,
+				8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -332,10 +341,10 @@
 						DevelopmentTeam = JKSKE56N5U;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -349,10 +358,10 @@
 						DevelopmentTeam = JKSKE56N5U;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.OMC = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -427,12 +436,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */,
+				8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */,
+				8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */,
 				8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */,
+				8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */,
 				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
 				8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */,
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
 				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
+				8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,8 +671,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -667,7 +681,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -678,13 +692,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
