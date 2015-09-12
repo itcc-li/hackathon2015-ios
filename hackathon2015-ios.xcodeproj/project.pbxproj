@@ -23,6 +23,11 @@
 		8B69D1311BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
+		8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA231BA442EC0025A9C1 /* DataManager.swift */; };
+		8BBFCA2B1BA44A960025A9C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */; };
+		8BBFCA2D1BA44A980025A9C1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */; };
+		8BBFCA2E1BA44AA10025A9C1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */; };
+		8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA301BA44DA40025A9C1 /* Poi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,10 @@
 		8B69D12B1BA2D38E0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		8BBFCA231BA442EC0025A9C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		8BBFCA301BA44DA40025A9C1 /* Poi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBFCA2B1BA44A960025A9C1 /* StoreKit.framework in Frameworks */,
+				8BBFCA2D1BA44A980025A9C1 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBFCA2E1BA44AA10025A9C1 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +128,9 @@
 		8B69D0E11BA2158A0073FB52 = {
 			isa = PBXGroup;
 			children = (
+				8BBFCA2C1BA44A980025A9C1 /* GameKit.framework */,
+				8BBFCA2A1BA44A960025A9C1 /* StoreKit.framework */,
+				8BBFCA221BA442DB0025A9C1 /* data */,
 				8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */,
 				8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */,
 				8B69D1171BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension */,
@@ -221,6 +236,15 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		8BBFCA221BA442DB0025A9C1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8BBFCA231BA442EC0025A9C1 /* DataManager.swift */,
+				8BBFCA301BA44DA40025A9C1 /* Poi.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +330,14 @@
 					8B69D0E91BA2158A0073FB52 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = JKSKE56N5U;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					8B69D1011BA2158B0073FB52 = {
 						CreatedOnToolsVersion = 6.4;
@@ -315,6 +347,14 @@
 					8B69D1151BA2D38D0073FB52 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = JKSKE56N5U;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					8B69D1221BA2D38E0073FB52 = {
 						CreatedOnToolsVersion = 6.4;
@@ -387,7 +427,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */,
 				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
+				8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */,
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
 				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
@@ -476,6 +518,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				COPY_PHASE_STRIP = NO;
@@ -548,7 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -561,7 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -615,7 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -624,7 +667,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -636,12 +679,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -651,7 +694,8 @@
 		8B69D1361BA2D38E0073FB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -668,7 +712,8 @@
 		8B69D1371BA2D38E0073FB52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
