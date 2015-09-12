@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sx4-CK-ytb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="67M-7P-X7m">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Uv-CQ-WS5">
+            <objects>
+                <tabBarController id="67M-7P-X7m" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hTZ-pR-w1n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Sx4-CK-ytb" kind="relationship" relationship="viewControllers" id="QxT-vm-V6q"/>
+                        <segue destination="QZK-1I-wks" kind="relationship" relationship="viewControllers" id="eE2-70-QuG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1R-Kf-XYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1795" y="-482"/>
+        </scene>
+        <!--Map-->
         <scene sceneID="If8-Eq-qqF">
             <objects>
-                <viewController id="Sx4-CK-ytb" customClass="MapViewController" customModule="hackathon2015_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="Sx4-CK-ytb" customClass="MapViewController" customModule="hackathon2015_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kHz-VK-kmX"/>
                         <viewControllerLayoutGuide type="bottom" id="1in-1c-Tdx"/>
@@ -17,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUm-vD-i0f">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUm-vD-i0f">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </mapView>
                         </subviews>
@@ -29,18 +48,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="xUm-vD-i0f" secondAttribute="trailing" constant="-16" id="bsw-G0-QuH"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="zym-Za-gz2"/>
                     <connections>
                         <outlet property="mapView" destination="xUm-vD-i0f" id="4LD-Xy-tl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rc-NU-vnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564" y="-191"/>
+            <point key="canvasLocation" x="-1076" y="-1319"/>
         </scene>
-        <!--View Controller-->
+        <!--List-->
         <scene sceneID="9y5-zx-bjC">
             <objects>
-                <viewController id="QZK-1I-wks" customClass="ViewController" customModule="hackathon2015_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="List" id="QZK-1I-wks" customClass="ViewController" customModule="hackathon2015_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eal-Iz-0SM"/>
                         <viewControllerLayoutGuide type="bottom" id="2LD-b2-Y9d"/>
@@ -49,7 +69,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-39-S43">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-39-S43">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -62,13 +82,17 @@
                             <constraint firstItem="BLV-39-S43" firstAttribute="leading" secondItem="eF6-sb-DVw" secondAttribute="leadingMargin" constant="-16" id="nKF-MS-NA7"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="List" image="listIcon" id="rio-yD-xYJ"/>
                     <connections>
                         <outlet property="tableView" destination="BLV-39-S43" id="i1m-lG-MEN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbo-kI-1gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="-211"/>
+            <point key="canvasLocation" x="-1076" y="-579"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="listIcon" width="30" height="30"/>
+    </resources>
 </document>

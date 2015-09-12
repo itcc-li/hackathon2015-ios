@@ -38,13 +38,16 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
     
     func connectionDidFinishLoading(connection: NSURLConnection) {
         var myError: NSError? = nil
-        var resultJson: AnyObject? = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError)
+        var resultJson: NSArray = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError) as! Array<Poi>
         var error = NSString(data: responseData, encoding:NSUTF8StringEncoding)
-        if resultJson is NSDictionary {
-            if objectType == ObjectType.UserAuthentication{
-                serverManagerDelegate.authenticationReceived()
-            }
-        }else {
+        if objectType == ObjectType.UserAuthentication{
+            serverManagerDelegate.authenticationReceived(resultJson)
+        } else if objectType == ObjectType.Pois {
+            serverManagerDelegate.poisReceived(resultJson)
+        }
+    /*
+        if resultJson is NSArray {
+    }else {
             var message = "Server response data not in expected format: "
             var error = NSString(data: responseData, encoding:NSUTF8StringEncoding)
             if error != nil {
@@ -53,5 +56,6 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
             println(message)
             serverManagerDelegate.errorHappened()
         }
+        */
     }
 }

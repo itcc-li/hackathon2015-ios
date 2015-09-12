@@ -533,8 +533,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -556,7 +556,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "10b3fb3c-ee08-43d5-a36c-6ee5a64e23c1";
+				PROVISIONING_PROFILE = "61018f69-63d3-4af0-9fde-496a3c09f566";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -595,7 +595,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "10b3fb3c-ee08-43d5-a36c-6ee5a64e23c1";
+				PROVISIONING_PROFILE = "61018f69-63d3-4af0-9fde-496a3c09f566";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -605,12 +605,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
 				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "41f5f3d6-4534-436d-94b9-a01b2f27c106";
+				PROVISIONING_PROFILE = "61018f69-63d3-4af0-9fde-496a3c09f566";
 			};
 			name = Debug;
 		};
@@ -623,7 +623,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "41f5f3d6-4534-436d-94b9-a01b2f27c106";
+				PROVISIONING_PROFILE = "61018f69-63d3-4af0-9fde-496a3c09f566";
 			};
 			name = Release;
 		};
@@ -671,8 +671,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -681,7 +681,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
+				PROVISIONING_PROFILE = "7ac6bf35-fa40-4c3f-b073-7dcfc3c071d3";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -698,7 +698,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b29d3cc4-cc1c-4f57-a58a-ca6e4cb0ca71";
+				PROVISIONING_PROFILE = "7ac6bf35-fa40-4c3f-b073-7dcfc3c071d3";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -709,8 +709,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sitewalk Establishment (JKSKE56N5U)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Ritter (CJ5SGP4VAU)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -718,7 +718,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "10b3fb3c-ee08-43d5-a36c-6ee5a64e23c1";
+				PROVISIONING_PROFILE = "11afe85f-31f0-4459-84ab-ae8c885c43d5";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -732,7 +732,7 @@
 				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "10b3fb3c-ee08-43d5-a36c-6ee5a64e23c1";
+				PROVISIONING_PROFILE = "11afe85f-31f0-4459-84ab-ae8c885c43d5";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

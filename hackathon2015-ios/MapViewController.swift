@@ -14,8 +14,8 @@ class MapViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dataManager = DataManager()
-        for(var i=0; i<dataManager.getData().count; i++) {
+        let dataManager : DataManager = (UIApplication.sharedApplication().delegate as! AppDelegate).dataManager;
+        for(var i=0; i < dataManager.getData().count; i++) {
             var currPoi = dataManager.getData()[i]
             var ctrpoint : CLLocationCoordinate2D = CLLocationCoordinate2D()
             ctrpoint.latitude = Double(currPoi.latitude!)

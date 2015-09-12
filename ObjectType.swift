@@ -10,4 +10,5 @@ import Foundation
 
 enum ObjectType {
     case UserAuthentication
+    case Pois
 }

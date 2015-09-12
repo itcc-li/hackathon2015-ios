@@ -11,7 +11,7 @@ import UIKit
 
 class DataManager : NSObject{
     func getData() -> Array<Poi> {
-        let serverManager = ServerManager()
+        let serverManager = ServerManager(dataManager: self)
         serverManager.getUserToken("simonmeier", first_name: "Simon", last_name: "Meier", email_address: "simon.a.meier@gmail.com")
         var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitude\":47.052934}]"
         var data: NSData = jsonArray.dataUsingEncoding(NSUTF8StringEncoding)!
