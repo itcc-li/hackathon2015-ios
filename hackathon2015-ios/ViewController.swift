@@ -27,13 +27,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 5
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : UITableViewCell = UITableViewCell()
-        var image : UIImage = UIImage(named: "grauspitz")!
-        cell.imageView!.image = image
-        var textView : UITextView = UITextView()
-        textView.text = "Grauspitz"
-        return cell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->UITableViewCell{
+        if indexPath.row == 4
+        {
+            var cell : UITableViewCell = UITableViewCell()
+            var textView : UITextView = UITextView()
+            cell.textLabel!.text = "+"
+            cell.textLabel?.textAlignment = .Center
+            cell.contentView.addSubview(textView)
+            return cell
+        }
+        else
+        {
+            var cell : UITableViewCell = UITableViewCell()
+            var image : UIImage = UIImage(named: "grauspitz")!
+            cell.imageView!.image = image
+            var textView : UITextView = UITextView()
+            cell.textLabel!.text = "Grauspitz"
+            cell.contentView.addSubview(textView)
+            return cell
+        }
     }
 }
 
