@@ -1,5 +1,5 @@
 //
-//  ObjectType.swift
+//  AppDelegate2.swift
 //  hackathon2015-ios
 //
 //  Created by Simon Meier on 12/09/15.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-enum ObjectType {
-    case UserAuthentication
-    case Pois
-    case PoiPush
+protocol AppDelegate2 {
+    func dataReceived(array: Array<Poi>)
 }

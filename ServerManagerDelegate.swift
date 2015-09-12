@@ -10,7 +10,7 @@ import Foundation
 
 protocol ServerManagerDelegate {
     func authenticationReceived(array: NSArray)
-    func poisReceived(array: NSArray)
+    func poisReceived(array: Array<Poi>)
     func serverDataLoaded(objectType: ObjectType, dictionary: NSDictionary)
     
     func errorHappenedAtAuthentication()

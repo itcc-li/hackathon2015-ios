@@ -1,5 +1,5 @@
 //
-//  ObjectType.swift
+//  DataManagerDelegate.swift
 //  hackathon2015-ios
 //
 //  Created by Simon Meier on 12/09/15.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-enum ObjectType {
-    case UserAuthentication
-    case Pois
-    case PoiPush
+protocol DataManagerDelegate {
+    func dataReceived(data: Array<Poi>)
 }

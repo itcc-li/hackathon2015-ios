@@ -10,14 +10,32 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
     var window: UIWindow?
-    let dataManager: DataManager = DataManager()
+    var dataManager: DataManager?
+    var poisData : Array<Poi> = Array<Poi>()
+    static var tabBarController : UITabBarController?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        AppDelegate.tabBarController = self.window?.rootViewController as? UITabBarController
+        self.dataManager = DataManager(delegate: self)
+        dataManager!.getData()
         NSThread.sleepForTimeInterval(1.0)
         return true
+    }
+    
+    func dataReceived(array: Array<Poi>) {
+        poisData = array
+        
+        var selectedIndex = -1
+        selectedIndex = AppDelegate.tabBarController!.selectedIndex
+        if selectedIndex == 0 {
+            var mapViewController = (AppDelegate.tabBarController!.selectedViewController as! UINavigationController).childViewControllers[0] as! MapViewController
+            mapViewController.showData()
+        }else if selectedIndex == 1 {
+            ((AppDelegate.tabBarController!.selectedViewController as! UINavigationController).childViewControllers[0] as! ViewController).showData()
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

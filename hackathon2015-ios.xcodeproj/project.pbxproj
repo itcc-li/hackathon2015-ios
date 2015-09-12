@@ -22,6 +22,8 @@
 		8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 		8B69D1311BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B69D1161BA2D38D0073FB52 /* hackathon2015-ios WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */; };
+		8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */; };
 		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
 		8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA231BA442EC0025A9C1 /* DataManager.swift */; };
 		8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA301BA44DA40025A9C1 /* Poi.swift */; };
@@ -31,6 +33,7 @@
 		8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */; };
 		8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */; };
 		8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */; };
+		8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,8 @@
 		8B69D1291BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B69D12B1BA2D38E0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate2.swift; sourceTree = "<group>"; };
+		8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryController.swift; sourceTree = "<group>"; };
 		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		8BBFCA231BA442EC0025A9C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8BBFCA301BA44DA40025A9C1 /* Poi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionResult.swift; sourceTree = "<group>"; };
 		8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
 		8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManagerDelegate.swift; sourceTree = "<group>"; };
+		8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +165,9 @@
 			children = (
 				8BBFCA1F1BA424210025A9C1 /* Cell */,
 				8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */,
-				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
 				8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */,
+				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
+				8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */,
 				8B69D0F61BA2158A0073FB52 /* Main.storyboard */,
 				8B69D0F91BA2158A0073FB52 /* Images.xcassets */,
 				8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */,
@@ -250,6 +257,8 @@
 				8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */,
 				8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */,
 				8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */,
+				8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */,
+				8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -438,12 +447,15 @@
 			files = (
 				8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */,
 				8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */,
+				8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */,
 				8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */,
 				8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */,
 				8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */,
 				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
 				8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */,
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
+				8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */,
+				8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */,
 				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
 				8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */,

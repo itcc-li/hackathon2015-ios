@@ -9,33 +9,29 @@
 import Foundation
 import UIKit
 
-class DataManager : NSObject{
-    func getData() -> Array<Poi> {
-        let serverManager = ServerManager(dataManager: self)
-        serverManager.getUserToken("simonmeier", first_name: "Simon", last_name: "Meier", email_address: "simon.a.meier@gmail.com")
-        var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitude\":47.052934}]"
-        var data: NSData = jsonArray.dataUsingEncoding(NSUTF8StringEncoding)!
-        var error: NSError?
-        let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0),
-            error: &error)
-        println(error)
-        var list : Array<Poi> = self.parseJson(anyObj!)
-        return list
+/*
+var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitude\":47.052934}]"
+*/
+
+class DataManager : DataManagerDelegate{
+    var appDelegate2 : AppDelegate2
+    
+    init(delegate: AppDelegate2) {
+        appDelegate2 = delegate
+    }
+    func getData() {
+        let serverManager : ServerManager? = ServerManager(dataManagerDelegate: self)
+        serverManager!.getUserToken("simonmeier", first_name: "Simon", last_name: "Meier", email_address: "simon.a.meier@gmail.com")
+        serverManager!.getPois()
     }
     
-    func parseJson(anyObj:AnyObject) -> Array<Poi>{
-        var list:Array<Poi> = []
-        if  anyObj is Array<AnyObject> {
-            var poi:Poi = Poi()
-            for json in anyObj as! Array<AnyObject>{
-                poi.name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
-                poi.id  =  (json["id"]  as AnyObject? as? Int) ?? 0
-                poi.description = (json["description"] as? String) ?? ""
-                poi.longitude = (json["longitude"] as? Float) ?? 0
-                poi.latitude = (json["latitude"] as? Float) ?? 0
-                list.append(poi)
-            }
-        }
-        return list
+    func dataReceived(array: Array<Poi>) {
+        appDelegate2.dataReceived(array)
     }
+    
+    func postData(name: String, description: String, longitude: Double, latitude: Double, imageBase64: String) {
+        let serverManager : ServerManager? = ServerManager(dataManagerDelegate: self)
+        serverManager!.postData(name, description: description, longitude: longitude, latitude: latitude, imageBase64: imageBase64)
+    }
+
 }

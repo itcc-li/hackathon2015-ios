@@ -37,25 +37,37 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
     }
     
     func connectionDidFinishLoading(connection: NSURLConnection) {
-        var myError: NSError? = nil
-        var resultJson: NSArray = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError) as! Array<Poi>
-        var error = NSString(data: responseData, encoding:NSUTF8StringEncoding)
+        var error: NSError?
+        //var resultJson: Array<Poi> = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError) as! Array<Poi>
+        //var resultJson: NSArray = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError) as! Array<Poi>
+        //todo !!!
+        var responseDataString = NSString(data: responseData, encoding:NSUTF8StringEncoding)
+        println(responseDataString)
         if objectType == ObjectType.UserAuthentication{
-            serverManagerDelegate.authenticationReceived(resultJson)
+            //serverManagerDelegate.authenticationReceived(list)
         } else if objectType == ObjectType.Pois {
-            serverManagerDelegate.poisReceived(resultJson)
+            let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions(0),error: &error)
+            var list : Array<Poi> = self.parseJson(anyObj!)
+            serverManagerDelegate.poisReceived(list)
+        } else if objectType == ObjectType.PoiPush {
+            println("pushed")
         }
-    /*
-        if resultJson is NSArray {
-    }else {
-            var message = "Server response data not in expected format: "
-            var error = NSString(data: responseData, encoding:NSUTF8StringEncoding)
-            if error != nil {
-                message += error as! String
-            }
-            println(message)
-            serverManagerDelegate.errorHappened()
-        }
-        */
     }
+    
+    func parseJson(anyObj:AnyObject) -> Array<Poi>{
+        var list:Array<Poi> = []
+        if  anyObj is Array<AnyObject> {
+            var poi:Poi = Poi()
+            for json in anyObj as! Array<AnyObject>{
+                poi.name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
+                poi.id  =  (json["id"]  as AnyObject? as? Int) ?? 0
+                poi.description = (json["description"] as? String) ?? ""
+                poi.longitude = (json["longitude"] as? Float) ?? 0
+                poi.latitude = (json["latitude"] as? Float) ?? 0
+                list.append(poi)
+            }
+        }
+        return list
+    }
+
 }
