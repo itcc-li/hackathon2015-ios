@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var dataList : Array<Poi> = Array<Poi>()
+    var selectedPoi : Poi?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +50,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if cell == nil {
                 cell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:"poiCell")
             }
-            var image : UIImage = UIImage(named: "grauspitz")!
-            cell!.imageView!.image = image
+            //var image : UIImage = UIImage(named: "grauspitz")!
+            //cell!.imageView!.image = image
             var textView : UITextView = UITextView()
             cell!.textLabel!.text = dataList[indexPath.row].name
             cell!.contentView.addSubview(textView)
@@ -60,6 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row < dataList.count {
+            selectedPoi = dataList[indexPath.row]
             performSegueWithIdentifier("showDetail", sender: self)
         } else {
             performSegueWithIdentifier("addDetail", sender: self)
@@ -68,7 +70,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier! == "showDetail" {
-            
+            var entryViewController = segue.destinationViewController as! EntryViewController
+            entryViewController.currPoi = selectedPoi
         }
     }
 }

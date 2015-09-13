@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>235EC706-5033-435D-8491-828C8F0AA0A4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>hackathon2015-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>470121922214233171F634B15D3830EF7A7257C4</key>
 		<string>http://github.com/itcc-li/hackathon2015-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>hackathon2015-ios.xcodeproj/project.xcworkspace</string>
+	<string>hackathon2015-ios.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>470121922214233171F634B15D3830EF7A7257C4</key>

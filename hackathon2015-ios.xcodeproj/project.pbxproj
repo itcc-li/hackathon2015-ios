@@ -24,11 +24,12 @@
 		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
 		8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */; };
 		8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */; };
+		8B8554D31BA574D50093F6CB /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8554D21BA574D50093F6CB /* EntryViewController.swift */; };
+		8B8554D61BA5AEC50093F6CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8554D51BA5AEC50093F6CB /* MapKit.framework */; };
 		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
 		8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA231BA442EC0025A9C1 /* DataManager.swift */; };
 		8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA301BA44DA40025A9C1 /* Poi.swift */; };
 		8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */; };
-		8BBFCA351BA45DAB0025A9C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */; };
 		8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */; };
 		8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */; };
 		8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */; };
@@ -98,11 +99,12 @@
 		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate2.swift; sourceTree = "<group>"; };
 		8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryController.swift; sourceTree = "<group>"; };
+		8B8554D21BA574D50093F6CB /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		8B8554D51BA5AEC50093F6CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		8BBFCA231BA442EC0025A9C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8BBFCA301BA44DA40025A9C1 /* Poi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
 		8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionResult.swift; sourceTree = "<group>"; };
 		8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBFCA351BA45DAB0025A9C1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8554D61BA5AEC50093F6CB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +141,7 @@
 		8B69D0E11BA2158A0073FB52 = {
 			isa = PBXGroup;
 			children = (
-				8BBFCA341BA45DAB0025A9C1 /* MapKit.framework */,
+				8B8554D51BA5AEC50093F6CB /* MapKit.framework */,
 				8BBFCA221BA442DB0025A9C1 /* data */,
 				8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */,
 				8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */,
@@ -167,6 +169,7 @@
 				8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */,
 				8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */,
 				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
+				8B8554D21BA574D50093F6CB /* EntryViewController.swift */,
 				8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */,
 				8B69D0F61BA2158A0073FB52 /* Main.storyboard */,
 				8B69D0F91BA2158A0073FB52 /* Images.xcassets */,
@@ -369,6 +372,9 @@
 							com.apple.GameCenter = {
 								enabled = 0;
 							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
 							com.apple.OMC = {
 								enabled = 0;
 							};
@@ -456,6 +462,7 @@
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
 				8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */,
 				8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */,
+				8B8554D31BA574D50093F6CB /* EntryViewController.swift in Sources */,
 				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
 				8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */,

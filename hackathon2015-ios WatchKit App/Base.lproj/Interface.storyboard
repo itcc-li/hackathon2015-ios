@@ -10,7 +10,8 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="hackathon2015_ios_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="center" verticalAlignment="center" title="Mountain Raid" id="V2N-GS-E6T">
+                        <map height="100" alignment="left" id="Xch-8C-aaf"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Pin it!" id="V2N-GS-E6T">
                             <connections>
                                 <segue destination="0VR-Pp-Wgo" kind="push" identifier="showMountain" id="vph-g8-NPj"/>
                             </connections>

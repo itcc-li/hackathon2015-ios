@@ -57,7 +57,7 @@ class ServerManager : ServerManagerDelegate{
         request.HTTPMethod = "Post"
         var connectionResult : ConnectionResult
         request.setValue("application/json", forHTTPHeaderField: "accept")
-        var pushJson = "{\"name\":\"\(name)\",\"description\":\"\(description)\",\"longitude\":\(longitude),\"latitude\":\(latitude),\"image\":\"\(imageBase64)\"}"
+        var pushJson = "user_id=2&name=\(name)&description=\(description)&longitude=\(longitude)&latitude=\(latitude)" //&image=\(imageBase64)"
         request.HTTPBody = pushJson.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true) as NSData!
         connectionResult = ConnectionResult(objectType: ObjectType.PoiPush, delegate: self)
         var connection = NSURLConnection(request: request, delegate: connectionResult)

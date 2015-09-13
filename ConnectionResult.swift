@@ -55,15 +55,15 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
     }
     
     func parseJson(anyObj:AnyObject) -> Array<Poi>{
-        var list:Array<Poi> = []
+        var list:Array<Poi> = Array<Poi>()
         if  anyObj is Array<AnyObject> {
-            var poi:Poi = Poi()
-            for json in anyObj as! Array<AnyObject>{
-                poi.name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
-                poi.id  =  (json["id"]  as AnyObject? as? Int) ?? 0
-                poi.description = (json["description"] as? String) ?? ""
-                poi.longitude = (json["longitude"] as? Float) ?? 0
-                poi.latitude = (json["latitude"] as? Float) ?? 0
+            for var i=0; i < (anyObj as! Array<AnyObject>).count ; i++ {
+                var poi:Poi = Poi()
+                poi.name = (anyObj[i]["name"] as? String) ?? ""
+                poi.id  =  (anyObj[i]["id"] as? Int) ?? 0
+                poi.description = (anyObj[i]["description"] as? String) ?? ""
+                poi.longitude = (anyObj[i]["longitude"] as? Float) ?? 0
+                poi.latitude = (anyObj[i]["latitude"] as? Float) ?? 0
                 list.append(poi)
             }
         }

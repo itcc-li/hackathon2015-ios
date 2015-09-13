@@ -18,6 +18,7 @@
                     <connections>
                         <segue destination="c0e-2w-LiD" kind="relationship" relationship="viewControllers" id="QxT-vm-V6q"/>
                         <segue destination="JvE-5i-YPO" kind="relationship" relationship="viewControllers" id="eE2-70-QuG"/>
+                        <segue destination="YZi-9r-D4A" kind="relationship" relationship="viewControllers" id="goR-GW-TXL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1R-Kf-XYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,7 +98,7 @@
         <!--Detail-->
         <scene sceneID="ZEJ-8g-eNI">
             <objects>
-                <viewController title="Detail" id="ODh-mk-VrO" sceneMemberID="viewController">
+                <viewController title="Detail" id="ODh-mk-VrO" customClass="EntryViewController" customModule="hackathon2015_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bPf-Mj-ss3"/>
                         <viewControllerLayoutGuide type="bottom" id="XqS-nk-M4n"/>
@@ -107,20 +108,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-P5-26O">
-                                <rect key="frame" x="279" y="40" width="42" height="20.5"/>
+                                <rect key="frame" x="279" y="84" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nu9-68-V0W">
-                                <rect key="frame" x="100" y="80" width="400" height="300"/>
+                                <rect key="frame" x="100" y="124" width="400" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="Akx-mm-oBQ"/>
-                                    <constraint firstAttribute="height" constant="300" id="Oas-1A-DWy"/>
+                                    <constraint firstAttribute="height" constant="150" id="Oas-1A-DWy"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hGn-c1-BJZ">
-                                <rect key="frame" x="16" y="400.5" width="568" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hGn-c1-BJZ">
+                                <rect key="frame" x="16" y="294" width="568" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="zZA-r6-K9u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -144,6 +148,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descrTextField" destination="hGn-c1-BJZ" id="j3K-GO-vU6"/>
+                        <outlet property="entryTitelLabel" destination="bIb-P5-26O" id="15o-1r-yA5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koM-gB-46H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,12 +202,6 @@
                                     <action selector="pinClicked:" destination="3Cm-nc-Vzt" eventType="touchDown" id="p13-2N-Hz0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-tP-RUf">
-                                <rect key="frame" x="279" y="304" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-VP-Rhm">
                                 <rect key="frame" x="16" y="344" width="568" height="100"/>
                                 <constraints>
@@ -232,13 +234,13 @@
                     </view>
                     <connections>
                         <outlet property="descriptionTextField" destination="IHu-VP-Rhm" id="6jo-hF-NUK"/>
-                        <outlet property="longLatLabel" destination="oC1-tP-RUf" id="YJh-7l-qen"/>
                         <outlet property="nameTextField" destination="FHo-3x-yBD" id="aAw-7V-xWk"/>
+                        <outlet property="positionLabel" destination="sK9-Nz-37a" id="8a5-Vq-dqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIM-ev-QjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="95"/>
+            <point key="canvasLocation" x="736" y="303"/>
         </scene>
         <!--List-->
         <scene sceneID="5dU-9Z-GBg">
@@ -258,6 +260,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlY-Q6-5CW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1096" y="-383"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="C8h-tT-E24">
+            <objects>
+                <viewController id="YZi-9r-D4A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCm-kd-Sim"/>
+                        <viewControllerLayoutGuide type="bottom" id="WyM-Ws-x1r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GzJ-3w-4xx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The ITCC Hackers 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El3-Vx-hAI">
+                                <rect key="frame" x="200" y="28" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4QI-H1-CjY"/>
+                                    <constraint firstAttribute="height" constant="21" id="no6-iF-u0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hackers" translatesAutoresizingMaskIntoConstraints="NO" id="f1X-Qx-Qm4">
+                                <rect key="frame" x="100" y="81" width="400" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="Fec-TQ-i2g"/>
+                                    <constraint firstAttribute="width" constant="400" id="ogJ-r1-il3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourcecode: github.com/itcc-li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-xg-uea">
+                                <rect key="frame" x="50" y="333" width="500" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="kGR-fD-Y8r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vLx-xg-uea" firstAttribute="top" secondItem="f1X-Qx-Qm4" secondAttribute="bottom" constant="27" id="7ul-Ea-aYp"/>
+                            <constraint firstAttribute="centerX" secondItem="El3-Vx-hAI" secondAttribute="centerX" id="X1b-MZ-JwO"/>
+                            <constraint firstAttribute="centerX" secondItem="f1X-Qx-Qm4" secondAttribute="centerX" id="c9m-oq-Vd7"/>
+                            <constraint firstItem="f1X-Qx-Qm4" firstAttribute="top" secondItem="El3-Vx-hAI" secondAttribute="bottom" constant="32" id="fzb-SJ-4H9"/>
+                            <constraint firstItem="El3-Vx-hAI" firstAttribute="top" secondItem="WCm-kd-Sim" secondAttribute="bottom" constant="8" id="gnY-q6-Dld"/>
+                            <constraint firstAttribute="centerX" secondItem="vLx-xg-uea" secondAttribute="centerX" id="qNf-if-fgX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="zct-MC-i32"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeW-ww-P3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1091" y="367"/>
         </scene>
         <!--Map-->
         <scene sceneID="FOh-hL-wxa">
@@ -280,6 +337,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="30" height="30"/>
+        <image name="hackers" width="1024" height="576"/>
         <image name="listIcon" width="30" height="30"/>
         <image name="mapIcon" width="30" height="30"/>
     </resources>

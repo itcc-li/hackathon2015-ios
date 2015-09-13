@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import MapKit
 
 class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
