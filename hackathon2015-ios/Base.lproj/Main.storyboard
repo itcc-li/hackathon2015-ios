@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" id="mEW-az-A9D"/>
                     <connections>
                         <outlet property="mapView" destination="xUm-vD-i0f" id="4LD-Xy-tl2"/>
-                        <segue destination="3Cm-nc-Vzt" kind="show" identifier="addDetailFromMap" id="MAe-7K-frF"/>
+                        <segue destination="3Cm-nc-Vzt" kind="show" identifier="addDetailFromMap" id="SCW-79-sFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rc-NU-vnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-P5-26O">
-                                <rect key="frame" x="279" y="84" width="42" height="20.5"/>
+                                <rect key="frame" x="279" y="84" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK9-Nz-37a">
-                                <rect key="frame" x="279" y="304" width="42" height="20.5"/>
+                                <rect key="frame" x="279" y="304" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -200,6 +200,7 @@
                                 <state key="normal" title="Pin"/>
                                 <connections>
                                     <action selector="pinClicked:" destination="3Cm-nc-Vzt" eventType="touchDown" id="p13-2N-Hz0"/>
+                                    <segue destination="4D3-2Z-HSf" kind="unwind" unwindAction="cancelToListViewController:" id="Mre-GB-X6M"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-VP-Rhm">
@@ -239,8 +240,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIM-ev-QjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4D3-2Z-HSf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="736" y="303"/>
+            <point key="canvasLocation" x="400" y="-344"/>
         </scene>
         <!--List-->
         <scene sceneID="5dU-9Z-GBg">
@@ -291,9 +293,18 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourcecode: github.com/itcc-li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-xg-uea">
-                                <rect key="frame" x="50" y="333" width="500" height="20.5"/>
+                                <rect key="frame" x="50" y="333" width="500" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="kGR-fD-Y8r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright: ITCC Liechtenstein, itcc.li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmU-9N-IWG">
+                                <rect key="frame" x="160" y="362" width="281" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Q2f-hR-qab"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -303,10 +314,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vLx-xg-uea" firstAttribute="top" secondItem="f1X-Qx-Qm4" secondAttribute="bottom" constant="27" id="7ul-Ea-aYp"/>
+                            <constraint firstItem="YmU-9N-IWG" firstAttribute="top" secondItem="vLx-xg-uea" secondAttribute="bottom" constant="8" id="EQw-fP-JoU"/>
                             <constraint firstAttribute="centerX" secondItem="El3-Vx-hAI" secondAttribute="centerX" id="X1b-MZ-JwO"/>
                             <constraint firstAttribute="centerX" secondItem="f1X-Qx-Qm4" secondAttribute="centerX" id="c9m-oq-Vd7"/>
                             <constraint firstItem="f1X-Qx-Qm4" firstAttribute="top" secondItem="El3-Vx-hAI" secondAttribute="bottom" constant="32" id="fzb-SJ-4H9"/>
                             <constraint firstItem="El3-Vx-hAI" firstAttribute="top" secondItem="WCm-kd-Sim" secondAttribute="bottom" constant="8" id="gnY-q6-Dld"/>
+                            <constraint firstAttribute="centerX" secondItem="YmU-9N-IWG" secondAttribute="centerX" id="onu-Yd-9ev"/>
                             <constraint firstAttribute="centerX" secondItem="vLx-xg-uea" secondAttribute="centerX" id="qNf-if-fgX"/>
                         </constraints>
                     </view>
@@ -343,6 +356,6 @@
         <image name="mapIcon" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MAe-7K-frF"/>
+        <segue reference="SCW-79-sFE"/>
     </inferredMetricsTieBreakers>
 </document>

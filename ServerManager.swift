@@ -18,7 +18,7 @@ class ServerManager : ServerManagerDelegate{
     }
     
     func getUserToken(username: String, first_name: String, last_name: String, email_address: String) {
-        var request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
+        let request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
         request.HTTPMethod = "Post"
         var connectionResult : ConnectionResult
         request.setValue("application/json", forHTTPHeaderField: "accept")
@@ -28,7 +28,7 @@ class ServerManager : ServerManagerDelegate{
     }
     
     func getPois() {
-        var request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
+        let request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
         request.HTTPMethod = "GET"
         var connectionResult : ConnectionResult
         request.setValue("application/json", forHTTPHeaderField: "accept")
@@ -44,7 +44,7 @@ class ServerManager : ServerManagerDelegate{
         
     }
     func authenticationReceived(array: NSArray) {
-        println("Yes")
+        print("Yes")
     }
     func errorHappenedAtAuthentication() {
         
@@ -53,11 +53,11 @@ class ServerManager : ServerManagerDelegate{
         
     }
     func postData(name: String, description: String, longitude: Double, latitude: Double, imageBase64: String) {
-        var request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
+        let request = NSMutableURLRequest(URL: NSURL(string: serverAddr)!)
         request.HTTPMethod = "Post"
         var connectionResult : ConnectionResult
         request.setValue("application/json", forHTTPHeaderField: "accept")
-        var pushJson = "user_id=2&name=\(name)&description=\(description)&longitude=\(longitude)&latitude=\(latitude)" //&image=\(imageBase64)"
+        let pushJson = "user_id=2&name=\(name)&description=\(description)&longitude=\(longitude)&latitude=\(latitude)" //&image=\(imageBase64)"
         request.HTTPBody = pushJson.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true) as NSData!
         connectionResult = ConnectionResult(objectType: ObjectType.PoiPush, delegate: self)
         var connection = NSURLConnection(request: request, delegate: connectionResult)

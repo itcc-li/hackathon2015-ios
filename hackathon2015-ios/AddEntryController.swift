@@ -53,4 +53,5 @@ class AddEntryController : UIViewController, UITextFieldDelegate, UIImagePickerC
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     */
+    
 }

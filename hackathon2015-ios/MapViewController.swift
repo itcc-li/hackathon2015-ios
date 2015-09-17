@@ -20,7 +20,7 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        var authorizationStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        let authorizationStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
         if authorizationStatus == CLAuthorizationStatus.AuthorizedWhenInUse ||
             authorizationStatus == CLAuthorizationStatus.AuthorizedWhenInUse {
                 locationManager.startUpdatingLocation()
@@ -35,18 +35,18 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     func showData() {
         let appDelegate : AppDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
         for(var i=0; i < appDelegate.poisData.count; i++) {
-            var currPoi = appDelegate.poisData[i]
+            let currPoi = appDelegate.poisData[i]
             var ctrpoint : CLLocationCoordinate2D = CLLocationCoordinate2D()
             ctrpoint.latitude = Double(currPoi.latitude!)
             ctrpoint.longitude = Double(currPoi.longitude!)
-            var annotation : MKPointAnnotation = MKPointAnnotation()
+            let annotation : MKPointAnnotation = MKPointAnnotation()
             annotation.coordinate = ctrpoint
             annotation.title = currPoi.name
             mapView.addAnnotation(annotation)
         }
     }
     
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.AuthorizedWhenInUse ||
             status == CLAuthorizationStatus.AuthorizedWhenInUse {
                 locationManager.startUpdatingLocation()
@@ -54,11 +54,11 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         }
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!){
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
     }
     
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        println("Couldn't get your location")
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Couldn't get your location")
     }
     
     /*
@@ -73,7 +73,7 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
 
     }*/
     
-    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         if view.annotation.title == "Current Location" {
             currLongitude = view.annotation.coordinate.longitude
             currLatitude = view.annotation.coordinate.latitude
@@ -83,7 +83,7 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "addDetailFromMap" {
-            var addEntryController : AddEntryController = segue.destinationViewController as! AddEntryController
+            let addEntryController : AddEntryController = segue.destinationViewController as! AddEntryController
             addEntryController.longitude = currLongitude
             addEntryController.latitude = currLatitude
         }

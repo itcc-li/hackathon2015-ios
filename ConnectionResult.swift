@@ -42,15 +42,21 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
         //var resultJson: NSArray = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.MutableLeaves, error:&myError) as! Array<Poi>
         //todo !!!
         var responseDataString = NSString(data: responseData, encoding:NSUTF8StringEncoding)
-        println(responseDataString)
+        print(responseDataString)
         if objectType == ObjectType.UserAuthentication{
             //serverManagerDelegate.authenticationReceived(list)
         } else if objectType == ObjectType.Pois {
-            let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions(0),error: &error)
+            let anyObj: AnyObject?
+            do {
+                anyObj = try NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions(rawValue: 0))
+            } catch var error1 as NSError {
+                error = error1
+                anyObj = nil
+            }
             var list : Array<Poi> = self.parseJson(anyObj!)
             serverManagerDelegate.poisReceived(list)
         } else if objectType == ObjectType.PoiPush {
-            println("pushed")
+            print("pushed")
         }
     }
     
@@ -58,7 +64,7 @@ class ConnectionResult: NSObject, NSURLConnectionDelegate {
         var list:Array<Poi> = Array<Poi>()
         if  anyObj is Array<AnyObject> {
             for var i=0; i < (anyObj as! Array<AnyObject>).count ; i++ {
-                var poi:Poi = Poi()
+                let poi:Poi = Poi()
                 poi.name = (anyObj[i]["name"] as? String) ?? ""
                 poi.id  =  (anyObj[i]["id"] as? Int) ?? 0
                 poi.description = (anyObj[i]["description"] as? String) ?? ""

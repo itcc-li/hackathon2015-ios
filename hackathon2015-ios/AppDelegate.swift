@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
         // Override point for customization after application launch.
         AppDelegate.tabBarController = self.window?.rootViewController as? UITabBarController
         self.dataManager = DataManager(delegate: self)
-        dataManager!.getData()
+        getData()
         NSThread.sleepForTimeInterval(1.0)
         return true
     }
@@ -31,11 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
         var selectedIndex = -1
         selectedIndex = AppDelegate.tabBarController!.selectedIndex
         if selectedIndex == 0 {
-            var mapViewController = (AppDelegate.tabBarController!.selectedViewController as! UINavigationController).childViewControllers[0] as! MapViewController
+            let mapViewController = (AppDelegate.tabBarController!.selectedViewController as! UINavigationController).childViewControllers[0] as! MapViewController
             mapViewController.showData()
         }else if selectedIndex == 1 {
             ((AppDelegate.tabBarController!.selectedViewController as! UINavigationController).childViewControllers[0] as! ViewController).showData()
         }
+    }
+    
+    func getData() {
+        dataManager!.getData()
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -67,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "li.itcc.hackathon2015_ios" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
@@ -83,7 +87,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("hackathon2015_ios.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
-        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
+        do {
+            try coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+        } catch var error1 as NSError {
+            error = error1
             coordinator = nil
             // Report any error we got.
             var dict = [String: AnyObject]()
@@ -95,6 +102,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(error), \(error!.userInfo)")
             abort()
+        } catch {
+            fatalError()
         }
         
         return coordinator
@@ -116,11 +125,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegate2 {
     func saveContext () {
         if let moc = self.managedObjectContext {
             var error: NSError? = nil
-            if moc.hasChanges && !moc.save(&error) {
-                // Replace this implementation with code to handle the error appropriately.
-                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                NSLog("Unresolved error \(error), \(error!.userInfo)")
-                abort()
+            if moc.hasChanges {
+                do {
+                    try moc.save()
+                } catch let error1 as NSError {
+                    error = error1
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    NSLog("Unresolved error \(error), \(error!.userInfo)")
+                    abort()
+                }
             }
         }
     }

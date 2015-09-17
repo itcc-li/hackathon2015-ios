@@ -21,6 +21,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //dataList = dataManager.getData()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        (UIApplication.sharedApplication().delegate as! AppDelegate).getData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,8 +42,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->UITableViewCell{
         if indexPath.row == dataList.count {
-            var cell : UITableViewCell = UITableViewCell()
-            var textView : UITextView = UITextView()
+            let cell : UITableViewCell = UITableViewCell()
+            let textView : UITextView = UITextView()
             cell.textLabel!.text = "+"
             cell.textLabel?.textAlignment = .Center
             cell.contentView.addSubview(textView)
@@ -52,7 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             //var image : UIImage = UIImage(named: "grauspitz")!
             //cell!.imageView!.image = image
-            var textView : UITextView = UITextView()
+            let textView : UITextView = UITextView()
             cell!.textLabel!.text = dataList[indexPath.row].name
             cell!.contentView.addSubview(textView)
             return cell!
@@ -70,9 +74,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier! == "showDetail" {
-            var entryViewController = segue.destinationViewController as! EntryViewController
+            let entryViewController = segue.destinationViewController as! EntryViewController
             entryViewController.currPoi = selectedPoi
         }
+    }
+    
+    @IBAction func cancelToListViewController(segue:UIStoryboardSegue) {
+        
     }
 }
 
