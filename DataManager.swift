@@ -19,11 +19,34 @@ class DataManager : DataManagerDelegate{
     init(delegate: AppDelegate2) {
         appDelegate2 = delegate
     }
+    
     func getData() {
+        let service = GTLServicePoiApi()
+        /*
+        if (service == nil) {
+            service.retryEnabled = True;
+            GTMHTTPFetcher.setLoggingEnabled(True)
+        }
+        */
+        
+        let query = GTLQueryPoiApi.queryForGetPoiOverviewListWithLatitude(47.0,
+        longitude:9.0,maxCount: 100)
+        service.executeQuery(query, completionHandler:
+            { (ticket: GTLServiceTicket!, object: AnyObject!, error: NSError!) in
+                print("Data received")
+                //NSArray *items = [object items];
+                // Do something with items.
+                
+            }
+        )
+    
+        /*
         let serverManager : ServerManager? = ServerManager(dataManagerDelegate: self)
         serverManager!.getUserToken("simonmeier", first_name: "Simon", last_name: "Meier", email_address: "simon.a.meier@gmail.com")
         serverManager!.getPois()
+        */
     }
+    
     
     func dataReceived(array: Array<Poi>) {
         appDelegate2.dataReceived(array)
