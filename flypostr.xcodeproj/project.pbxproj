@@ -45,17 +45,17 @@
 		F4422B411BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B401BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m */; settings = {ASSET_TAGS = (); }; };
 		F4422B441BB3225300E8EA81 /* GTLQueryPoiApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B431BB3225300E8EA81 /* GTLQueryPoiApi.m */; settings = {ASSET_TAGS = (); }; };
 		F4422B471BB3227E00E8EA81 /* GTLServicePoiApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B5B1BB33BDB00E8EA81 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B4A1BB33BDB00E8EA81 /* GTLBatchQuery.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B5C1BB33BDB00E8EA81 /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B4C1BB33BDB00E8EA81 /* GTLBatchResult.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B5D1BB33BDB00E8EA81 /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B4E1BB33BDB00E8EA81 /* GTLDateTime.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B5E1BB33BDB00E8EA81 /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B501BB33BDB00E8EA81 /* GTLErrorObject.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B5F1BB33BDB00E8EA81 /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B521BB33BDB00E8EA81 /* GTLObject.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B601BB33BDB00E8EA81 /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B541BB33BDB00E8EA81 /* GTLQuery.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B611BB33BDB00E8EA81 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B561BB33BDB00E8EA81 /* GTLRuntimeCommon.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B621BB33BDB00E8EA81 /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B581BB33BDB00E8EA81 /* GTLService.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B631BB33BDB00E8EA81 /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B5A1BB33BDB00E8EA81 /* GTLUploadParameters.m */; settings = {ASSET_TAGS = (); }; };
 		F47230EA1BB3192B0031E934 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230E71BB3192B0031E934 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F47230EB1BB3192B0031E934 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230E91BB3192B0031E934 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47230FF1BB319890031E934 /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230ED1BB319890031E934 /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231001BB319890031E934 /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230EF1BB319890031E934 /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231011BB319890031E934 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F11BB319890031E934 /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231021BB319890031E934 /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F31BB319890031E934 /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231031BB319890031E934 /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F51BB319890031E934 /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231041BB319890031E934 /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F71BB319890031E934 /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231051BB319890031E934 /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F91BB319890031E934 /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231061BB319890031E934 /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230FB1BB319890031E934 /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F47231071BB319890031E934 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F47231231BB31A0A0031E934 /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231091BB31A0A0031E934 /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F47231241BB31A0A0031E934 /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F472310B1BB31A0A0031E934 /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F47231251BB31A0A0031E934 /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F472310E1BB31A0A0031E934 /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -180,30 +180,30 @@
 		F4422B431BB3225300E8EA81 /* GTLQueryPoiApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPoiApi.m; sourceTree = "<group>"; };
 		F4422B451BB3227E00E8EA81 /* GTLServicePoiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePoiApi.h; sourceTree = "<group>"; };
 		F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePoiApi.m; sourceTree = "<group>"; };
+		F4422B491BB33BDB00E8EA81 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchQuery.h; sourceTree = "<group>"; };
+		F4422B4A1BB33BDB00E8EA81 /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLBatchQuery.m; sourceTree = "<group>"; };
+		F4422B4B1BB33BDB00E8EA81 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchResult.h; sourceTree = "<group>"; };
+		F4422B4C1BB33BDB00E8EA81 /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLBatchResult.m; sourceTree = "<group>"; };
+		F4422B4D1BB33BDB00E8EA81 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDateTime.h; sourceTree = "<group>"; };
+		F4422B4E1BB33BDB00E8EA81 /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLDateTime.m; sourceTree = "<group>"; };
+		F4422B4F1BB33BDB00E8EA81 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLErrorObject.h; sourceTree = "<group>"; };
+		F4422B501BB33BDB00E8EA81 /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLErrorObject.m; sourceTree = "<group>"; };
+		F4422B511BB33BDB00E8EA81 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLObject.h; sourceTree = "<group>"; };
+		F4422B521BB33BDB00E8EA81 /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLObject.m; sourceTree = "<group>"; };
+		F4422B531BB33BDB00E8EA81 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQuery.h; sourceTree = "<group>"; };
+		F4422B541BB33BDB00E8EA81 /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQuery.m; sourceTree = "<group>"; };
+		F4422B551BB33BDB00E8EA81 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRuntimeCommon.h; sourceTree = "<group>"; };
+		F4422B561BB33BDB00E8EA81 /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRuntimeCommon.m; sourceTree = "<group>"; };
+		F4422B571BB33BDB00E8EA81 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLService.h; sourceTree = "<group>"; };
+		F4422B581BB33BDB00E8EA81 /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLService.m; sourceTree = "<group>"; };
+		F4422B591BB33BDB00E8EA81 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLUploadParameters.h; sourceTree = "<group>"; };
+		F4422B5A1BB33BDB00E8EA81 /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLUploadParameters.m; sourceTree = "<group>"; };
 		F47230E41BB3192A0031E934 /* flypostr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flypostr-Bridging-Header.h"; sourceTree = "<group>"; };
 		F47230E51BB3192B0031E934 /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDefines.h; sourceTree = "<group>"; };
 		F47230E61BB3192B0031E934 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
 		F47230E71BB3192B0031E934 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
 		F47230E81BB3192B0031E934 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
 		F47230E91BB3192B0031E934 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
-		F47230EC1BB319890031E934 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLObject.h; path = Objects/GTLObject.h; sourceTree = "<group>"; };
-		F47230ED1BB319890031E934 /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLObject.m; path = Objects/GTLObject.m; sourceTree = "<group>"; };
-		F47230EE1BB319890031E934 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQuery.h; path = Objects/GTLQuery.h; sourceTree = "<group>"; };
-		F47230EF1BB319890031E934 /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQuery.m; path = Objects/GTLQuery.m; sourceTree = "<group>"; };
-		F47230F01BB319890031E934 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchQuery.h; path = Objects/GTLBatchQuery.h; sourceTree = "<group>"; };
-		F47230F11BB319890031E934 /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchQuery.m; path = Objects/GTLBatchQuery.m; sourceTree = "<group>"; };
-		F47230F21BB319890031E934 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLService.h; path = Objects/GTLService.h; sourceTree = "<group>"; };
-		F47230F31BB319890031E934 /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLService.m; path = Objects/GTLService.m; sourceTree = "<group>"; };
-		F47230F41BB319890031E934 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchResult.h; path = Objects/GTLBatchResult.h; sourceTree = "<group>"; };
-		F47230F51BB319890031E934 /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchResult.m; path = Objects/GTLBatchResult.m; sourceTree = "<group>"; };
-		F47230F61BB319890031E934 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUploadParameters.h; path = Objects/GTLUploadParameters.h; sourceTree = "<group>"; };
-		F47230F71BB319890031E934 /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUploadParameters.m; path = Objects/GTLUploadParameters.m; sourceTree = "<group>"; };
-		F47230F81BB319890031E934 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDateTime.h; path = Objects/GTLDateTime.h; sourceTree = "<group>"; };
-		F47230F91BB319890031E934 /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDateTime.m; path = Objects/GTLDateTime.m; sourceTree = "<group>"; };
-		F47230FA1BB319890031E934 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLErrorObject.h; path = Objects/GTLErrorObject.h; sourceTree = "<group>"; };
-		F47230FB1BB319890031E934 /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLErrorObject.m; path = Objects/GTLErrorObject.m; sourceTree = "<group>"; };
-		F47230FC1BB319890031E934 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRuntimeCommon.h; path = Objects/GTLRuntimeCommon.h; sourceTree = "<group>"; };
-		F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRuntimeCommon.m; path = Objects/GTLRuntimeCommon.m; sourceTree = "<group>"; };
 		F47231081BB31A0A0031E934 /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLFramework.h; path = Utilities/GTLFramework.h; sourceTree = "<group>"; };
 		F47231091BB31A0A0031E934 /* GTLFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLFramework.m; path = Utilities/GTLFramework.m; sourceTree = "<group>"; };
 		F472310A1BB31A0A0031E934 /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLJSONParser.h; path = Utilities/GTLJSONParser.h; sourceTree = "<group>"; };
@@ -409,9 +409,36 @@
 			name = SessionFetcher;
 			sourceTree = "<group>";
 		};
+		F4422B481BB33BDB00E8EA81 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F4422B491BB33BDB00E8EA81 /* GTLBatchQuery.h */,
+				F4422B4A1BB33BDB00E8EA81 /* GTLBatchQuery.m */,
+				F4422B4B1BB33BDB00E8EA81 /* GTLBatchResult.h */,
+				F4422B4C1BB33BDB00E8EA81 /* GTLBatchResult.m */,
+				F4422B4D1BB33BDB00E8EA81 /* GTLDateTime.h */,
+				F4422B4E1BB33BDB00E8EA81 /* GTLDateTime.m */,
+				F4422B4F1BB33BDB00E8EA81 /* GTLErrorObject.h */,
+				F4422B501BB33BDB00E8EA81 /* GTLErrorObject.m */,
+				F4422B511BB33BDB00E8EA81 /* GTLObject.h */,
+				F4422B521BB33BDB00E8EA81 /* GTLObject.m */,
+				F4422B531BB33BDB00E8EA81 /* GTLQuery.h */,
+				F4422B541BB33BDB00E8EA81 /* GTLQuery.m */,
+				F4422B551BB33BDB00E8EA81 /* GTLRuntimeCommon.h */,
+				F4422B561BB33BDB00E8EA81 /* GTLRuntimeCommon.m */,
+				F4422B571BB33BDB00E8EA81 /* GTLService.h */,
+				F4422B581BB33BDB00E8EA81 /* GTLService.m */,
+				F4422B591BB33BDB00E8EA81 /* GTLUploadParameters.h */,
+				F4422B5A1BB33BDB00E8EA81 /* GTLUploadParameters.m */,
+			);
+			name = Objects;
+			path = googleEndpoint/Objects;
+			sourceTree = "<group>";
+		};
 		F47230E31BB318D90031E934 /* googleEndpoint */ = {
 			isa = PBXGroup;
 			children = (
+				F4422B481BB33BDB00E8EA81 /* Objects */,
 				F4422B451BB3227E00E8EA81 /* GTLServicePoiApi.h */,
 				F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */,
 				F4422B421BB3225300E8EA81 /* GTLQueryPoiApi.h */,
@@ -432,37 +459,10 @@
 				F472312F1BB31A180031E934 /* OAuth2 */,
 				F47231111BB31A0A0031E934 /* Utilities */,
 				F47231221BB31A0A0031E934 /* HTTPFetcher */,
-				F47230FE1BB319890031E934 /* Objects */,
 				F47230E51BB3192B0031E934 /* GTLDefines.h */,
 				F47230E41BB3192A0031E934 /* flypostr-Bridging-Header.h */,
 			);
 			name = googleEndpoint;
-			sourceTree = "<group>";
-		};
-		F47230FE1BB319890031E934 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				F47230EC1BB319890031E934 /* GTLObject.h */,
-				F47230ED1BB319890031E934 /* GTLObject.m */,
-				F47230EE1BB319890031E934 /* GTLQuery.h */,
-				F47230EF1BB319890031E934 /* GTLQuery.m */,
-				F47230F01BB319890031E934 /* GTLBatchQuery.h */,
-				F47230F11BB319890031E934 /* GTLBatchQuery.m */,
-				F47230F21BB319890031E934 /* GTLService.h */,
-				F47230F31BB319890031E934 /* GTLService.m */,
-				F47230F41BB319890031E934 /* GTLBatchResult.h */,
-				F47230F51BB319890031E934 /* GTLBatchResult.m */,
-				F47230F61BB319890031E934 /* GTLUploadParameters.h */,
-				F47230F71BB319890031E934 /* GTLUploadParameters.m */,
-				F47230F81BB319890031E934 /* GTLDateTime.h */,
-				F47230F91BB319890031E934 /* GTLDateTime.m */,
-				F47230FA1BB319890031E934 /* GTLErrorObject.h */,
-				F47230FB1BB319890031E934 /* GTLErrorObject.m */,
-				F47230FC1BB319890031E934 /* GTLRuntimeCommon.h */,
-				F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */,
-			);
-			name = Objects;
-			path = "../google-api-objectivec-client-read-only/Source";
 			sourceTree = "<group>";
 		};
 		F47231111BB31A0A0031E934 /* Utilities */ = {
@@ -706,25 +706,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47231011BB319890031E934 /* GTLBatchQuery.m in Sources */,
-				F47231031BB319890031E934 /* GTLBatchResult.m in Sources */,
-				F47231061BB319890031E934 /* GTLErrorObject.m in Sources */,
-				F47231021BB319890031E934 /* GTLService.m in Sources */,
+				F4422B601BB33BDB00E8EA81 /* GTLQuery.m in Sources */,
 				F4422B471BB3227E00E8EA81 /* GTLServicePoiApi.m in Sources */,
-				F47230FF1BB319890031E934 /* GTLObject.m in Sources */,
+				F4422B5C1BB33BDB00E8EA81 /* GTLBatchResult.m in Sources */,
 				F4422B1C1BB320F900E8EA81 /* GTLPoiApiConstants.m in Sources */,
 				F4422B2F1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m in Sources */,
 				F4422B2C1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m in Sources */,
 				F47231251BB31A0A0031E934 /* GTLUtilities.m in Sources */,
-				F47231001BB319890031E934 /* GTLQuery.m in Sources */,
 				F47231241BB31A0A0031E934 /* GTLJSONParser.m in Sources */,
-				F47231071BB319890031E934 /* GTLRuntimeCommon.m in Sources */,
 				F4422B291BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m in Sources */,
-				F47231051BB319890031E934 /* GTLDateTime.m in Sources */,
-				F47231041BB319890031E934 /* GTLUploadParameters.m in Sources */,
 				F47231231BB31A0A0031E934 /* GTLFramework.m in Sources */,
 				F4422B441BB3225300E8EA81 /* GTLQueryPoiApi.m in Sources */,
 				F4422B3E1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m in Sources */,
+				F4422B5F1BB33BDB00E8EA81 /* GTLObject.m in Sources */,
 				F4422B411BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m in Sources */,
 				F47231261BB31A0A0031E934 /* GTLBase64.m in Sources */,
 				F47231281BB31A0A0031E934 /* GTMHTTPFetcher.m in Sources */,
@@ -738,10 +732,13 @@
 				F4422AE01BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m in Sources */,
 				F472312C1BB31A0A0031E934 /* GTMGatherInputStream.m in Sources */,
 				F4422AE81BB31CE000E8EA81 /* GTMSessionFetcher.m in Sources */,
+				F4422B611BB33BDB00E8EA81 /* GTLRuntimeCommon.m in Sources */,
+				F4422B631BB33BDB00E8EA81 /* GTLUploadParameters.m in Sources */,
 				F4422AEB1BB31CFA00E8EA81 /* GTMSessionFetcherService.m in Sources */,
 				F472312E1BB31A0A0031E934 /* GTMReadMonitorInputStream.m in Sources */,
 				8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */,
 				8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */,
+				F4422B621BB33BDB00E8EA81 /* GTLService.m in Sources */,
 				8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */,
 				8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */,
 				8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */,
@@ -749,8 +746,11 @@
 				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
 				8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */,
 				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
+				F4422B5E1BB33BDB00E8EA81 /* GTLErrorObject.m in Sources */,
 				8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */,
+				F4422B5D1BB33BDB00E8EA81 /* GTLDateTime.m in Sources */,
 				8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */,
+				F4422B5B1BB33BDB00E8EA81 /* GTLBatchQuery.m in Sources */,
 				8B8554D31BA574D50093F6CB /* EntryViewController.swift in Sources */,
 				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
 				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
