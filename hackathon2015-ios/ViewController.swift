@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         } else {
             var cell : UITableViewCell?
-            cell = tableView.dequeueReusableCellWithIdentifier("poiCell") as? UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("poiCell")
             if cell == nil {
                 cell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:"poiCell")
             }

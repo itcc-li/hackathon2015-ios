@@ -74,9 +74,9 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     }*/
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        if view.annotation.title == "Current Location" {
-            currLongitude = view.annotation.coordinate.longitude
-            currLatitude = view.annotation.coordinate.latitude
+        if view.annotation!.title! == "Current Location" {
+            currLongitude = view.annotation!.coordinate.longitude
+            currLatitude = view.annotation!.coordinate.latitude
             performSegueWithIdentifier("addDetailFromMap", sender: self)
         }
     }

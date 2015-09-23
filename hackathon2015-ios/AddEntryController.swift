@@ -25,7 +25,7 @@ class AddEntryController : UIViewController, UITextFieldDelegate, UIImagePickerC
         descriptionTextField.delegate = self
     }
     @IBAction func pinClicked(sender: AnyObject) {
-        (UIApplication.sharedApplication().delegate as! AppDelegate).dataManager!.postData(nameTextField.text, description: descriptionTextField.text, longitude: longitude, latitude: latitude, imageBase64: "")
+        (UIApplication.sharedApplication().delegate as! AppDelegate).dataManager!.postData(nameTextField.text!, description: descriptionTextField.text!, longitude: longitude, latitude: latitude, imageBase64: "")
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
