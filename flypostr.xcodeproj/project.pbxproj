@@ -1,0 +1,1134 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */; };
+		8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D0F11BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld */; };
+		8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D0F41BA2158A0073FB52 /* ViewController.swift */; };
+		8B69D0F81BA2158A0073FB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D0F61BA2158A0073FB52 /* Main.storyboard */; };
+		8B69D0FA1BA2158A0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D0F91BA2158A0073FB52 /* Images.xcassets */; };
+		8B69D0FD1BA2158A0073FB52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */; };
+		8B69D1091BA2158B0073FB52 /* hackathon2015_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D1081BA2158B0073FB52 /* hackathon2015_iosTests.swift */; };
+		8B69D11C1BA2D38E0073FB52 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */; };
+		8B69D11E1BA2D38E0073FB52 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */; };
+		8B69D1201BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D11F1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B69D12C1BA2D38E0073FB52 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */; };
+		8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B69D12D1BA2D38E0073FB52 /* Images.xcassets */; };
+		8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */; };
+		8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */; };
+		8B8554D31BA574D50093F6CB /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8554D21BA574D50093F6CB /* EntryViewController.swift */; };
+		8B8554D61BA5AEC50093F6CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8554D51BA5AEC50093F6CB /* MapKit.framework */; };
+		8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA201BA424430025A9C1 /* CustomCell.swift */; };
+		8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA231BA442EC0025A9C1 /* DataManager.swift */; };
+		8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA301BA44DA40025A9C1 /* Poi.swift */; };
+		8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */; };
+		8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */; };
+		8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */; };
+		8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */; };
+		8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */; };
+		8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */; };
+		F4422AE01BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422ADD1BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4422AE11BB31A5200E8EA81 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4422ADE1BB31A5200E8EA81 /* GTMOAuth2ViewTouch.xib */; settings = {ASSET_TAGS = (); }; };
+		F4422AE81BB31CE000E8EA81 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422AE71BB31CE000E8EA81 /* GTMSessionFetcher.m */; settings = {ASSET_TAGS = (); }; };
+		F4422AEB1BB31CFA00E8EA81 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422AEA1BB31CFA00E8EA81 /* GTMSessionFetcherService.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B1C1BB320F900E8EA81 /* GTLPoiApiConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B0D1BB320F900E8EA81 /* GTLPoiApiConstants.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B291BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B281BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B2C1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B2B1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B2F1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B2E1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B3E1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B3D1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B411BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B401BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B441BB3225300E8EA81 /* GTLQueryPoiApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B431BB3225300E8EA81 /* GTLQueryPoiApi.m */; settings = {ASSET_TAGS = (); }; };
+		F4422B471BB3227E00E8EA81 /* GTLServicePoiApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */; settings = {ASSET_TAGS = (); }; };
+		F47230EA1BB3192B0031E934 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230E71BB3192B0031E934 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47230EB1BB3192B0031E934 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230E91BB3192B0031E934 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47230FF1BB319890031E934 /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230ED1BB319890031E934 /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231001BB319890031E934 /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230EF1BB319890031E934 /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231011BB319890031E934 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F11BB319890031E934 /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231021BB319890031E934 /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F31BB319890031E934 /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231031BB319890031E934 /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F51BB319890031E934 /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231041BB319890031E934 /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F71BB319890031E934 /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231051BB319890031E934 /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230F91BB319890031E934 /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231061BB319890031E934 /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230FB1BB319890031E934 /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231071BB319890031E934 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231231BB31A0A0031E934 /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231091BB31A0A0031E934 /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231241BB31A0A0031E934 /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F472310B1BB31A0A0031E934 /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231251BB31A0A0031E934 /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F472310E1BB31A0A0031E934 /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231261BB31A0A0031E934 /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231101BB31A0A0031E934 /* GTLBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231271BB31A0A0031E934 /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231131BB31A0A0031E934 /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231281BB31A0A0031E934 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231151BB31A0A0031E934 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47231291BB31A0A0031E934 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231171BB31A0A0031E934 /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F472312A1BB31A0A0031E934 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231191BB31A0A0031E934 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F472312B1BB31A0A0031E934 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F472311B1BB31A0A0031E934 /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F472312C1BB31A0A0031E934 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F472311D1BB31A0A0031E934 /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F472312D1BB31A0A0031E934 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F472311F1BB31A0A0031E934 /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F472312E1BB31A0A0031E934 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F47231211BB31A0A0031E934 /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4EB5F391BB29730008C417C /* flypostr.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B69D1161BA2D38D0073FB52 /* flypostr.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F4EB5F3C1BB29730008C417C /* flypostr.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B69D1231BA2D38E0073FB52 /* flypostr.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B69D1031BA2158B0073FB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B69D0E21BA2158A0073FB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B69D0E91BA2158A0073FB52;
+			remoteInfo = "hackathon2015-ios";
+		};
+		F4EB5F371BB29730008C417C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B69D0E21BA2158A0073FB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B69D1151BA2D38D0073FB52;
+			remoteInfo = "flypostr WatchKit Extension";
+		};
+		F4EB5F3A1BB29730008C417C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B69D0E21BA2158A0073FB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B69D1221BA2D38E0073FB52;
+			remoteInfo = "flypostr WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4EB5F3D1BB29731008C417C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4EB5F391BB29730008C417C /* flypostr.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EB5F3E1BB29731008C417C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F4EB5F3C1BB29730008C417C /* flypostr.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B69D0EA1BA2158A0073FB52 /* flypostr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flypostr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D0EE1BA2158A0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B69D0F21BA2158A0073FB52 /* hackathon2015_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackathon2015_ios.xcdatamodel; sourceTree = "<group>"; };
+		8B69D0F41BA2158A0073FB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B69D0F71BA2158A0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B69D0F91BA2158A0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B69D0FC1BA2158A0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8B69D1021BA2158B0073FB52 /* flypostr.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flypostr.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D1071BA2158B0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D1081BA2158B0073FB52 /* hackathon2015_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon2015_iosTests.swift; sourceTree = "<group>"; };
+		8B69D1161BA2D38D0073FB52 /* flypostr.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = flypostr.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D1191BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D11A1BA2D38E0073FB52 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B69D11F1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B69D1231BA2D38E0073FB52 /* flypostr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flypostr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69D1291BA2D38E0073FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B69D12B1BA2D38E0073FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B69D12D1BA2D38E0073FB52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate2.swift; sourceTree = "<group>"; };
+		8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryController.swift; sourceTree = "<group>"; };
+		8B8554D21BA574D50093F6CB /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		8B8554D51BA5AEC50093F6CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BBFCA201BA424430025A9C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		8BBFCA231BA442EC0025A9C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8BBFCA301BA44DA40025A9C1 /* Poi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
+		8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionResult.swift; sourceTree = "<group>"; };
+		8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManagerDelegate.swift; sourceTree = "<group>"; };
+		8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerDelegate.swift; sourceTree = "<group>"; };
+		F4422ADC1BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = OAuth2/Touch/GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		F4422ADD1BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = OAuth2/Touch/GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		F4422ADE1BB31A5200E8EA81 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		F4422AE61BB31CE000E8EA81 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcher.h; sourceTree = "<group>"; };
+		F4422AE71BB31CE000E8EA81 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSessionFetcher.m; sourceTree = "<group>"; };
+		F4422AE91BB31CFA00E8EA81 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		F4422AEA1BB31CFA00E8EA81 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		F4422B0A1BB320D500E8EA81 /* GTLPoiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApi.h; sourceTree = "<group>"; };
+		F4422B0C1BB320F900E8EA81 /* GTLPoiApiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiConstants.h; sourceTree = "<group>"; };
+		F4422B0D1BB320F900E8EA81 /* GTLPoiApiConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiConstants.m; sourceTree = "<group>"; };
+		F4422B271BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiPoiCreateBean.h; sourceTree = "<group>"; };
+		F4422B281BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiPoiCreateBean.m; sourceTree = "<group>"; };
+		F4422B2A1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiImageUploadUrlBean.h; sourceTree = "<group>"; };
+		F4422B2B1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiImageUploadUrlBean.m; sourceTree = "<group>"; };
+		F4422B2D1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiPoiDetailBean.h; sourceTree = "<group>"; };
+		F4422B2E1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiPoiDetailBean.m; sourceTree = "<group>"; };
+		F4422B3C1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiPoiOverviewBean.h; sourceTree = "<group>"; };
+		F4422B3D1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiPoiOverviewBean.m; sourceTree = "<group>"; };
+		F4422B3F1BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPoiApiPoiOverviewListBean.h; sourceTree = "<group>"; };
+		F4422B401BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPoiApiPoiOverviewListBean.m; sourceTree = "<group>"; };
+		F4422B421BB3225300E8EA81 /* GTLQueryPoiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryPoiApi.h; sourceTree = "<group>"; };
+		F4422B431BB3225300E8EA81 /* GTLQueryPoiApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPoiApi.m; sourceTree = "<group>"; };
+		F4422B451BB3227E00E8EA81 /* GTLServicePoiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePoiApi.h; sourceTree = "<group>"; };
+		F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePoiApi.m; sourceTree = "<group>"; };
+		F47230E41BB3192A0031E934 /* flypostr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flypostr-Bridging-Header.h"; sourceTree = "<group>"; };
+		F47230E51BB3192B0031E934 /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDefines.h; sourceTree = "<group>"; };
+		F47230E61BB3192B0031E934 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		F47230E71BB3192B0031E934 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		F47230E81BB3192B0031E934 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		F47230E91BB3192B0031E934 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		F47230EC1BB319890031E934 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLObject.h; path = Objects/GTLObject.h; sourceTree = "<group>"; };
+		F47230ED1BB319890031E934 /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLObject.m; path = Objects/GTLObject.m; sourceTree = "<group>"; };
+		F47230EE1BB319890031E934 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQuery.h; path = Objects/GTLQuery.h; sourceTree = "<group>"; };
+		F47230EF1BB319890031E934 /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQuery.m; path = Objects/GTLQuery.m; sourceTree = "<group>"; };
+		F47230F01BB319890031E934 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchQuery.h; path = Objects/GTLBatchQuery.h; sourceTree = "<group>"; };
+		F47230F11BB319890031E934 /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchQuery.m; path = Objects/GTLBatchQuery.m; sourceTree = "<group>"; };
+		F47230F21BB319890031E934 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLService.h; path = Objects/GTLService.h; sourceTree = "<group>"; };
+		F47230F31BB319890031E934 /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLService.m; path = Objects/GTLService.m; sourceTree = "<group>"; };
+		F47230F41BB319890031E934 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchResult.h; path = Objects/GTLBatchResult.h; sourceTree = "<group>"; };
+		F47230F51BB319890031E934 /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchResult.m; path = Objects/GTLBatchResult.m; sourceTree = "<group>"; };
+		F47230F61BB319890031E934 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUploadParameters.h; path = Objects/GTLUploadParameters.h; sourceTree = "<group>"; };
+		F47230F71BB319890031E934 /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUploadParameters.m; path = Objects/GTLUploadParameters.m; sourceTree = "<group>"; };
+		F47230F81BB319890031E934 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDateTime.h; path = Objects/GTLDateTime.h; sourceTree = "<group>"; };
+		F47230F91BB319890031E934 /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDateTime.m; path = Objects/GTLDateTime.m; sourceTree = "<group>"; };
+		F47230FA1BB319890031E934 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLErrorObject.h; path = Objects/GTLErrorObject.h; sourceTree = "<group>"; };
+		F47230FB1BB319890031E934 /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLErrorObject.m; path = Objects/GTLErrorObject.m; sourceTree = "<group>"; };
+		F47230FC1BB319890031E934 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRuntimeCommon.h; path = Objects/GTLRuntimeCommon.h; sourceTree = "<group>"; };
+		F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRuntimeCommon.m; path = Objects/GTLRuntimeCommon.m; sourceTree = "<group>"; };
+		F47231081BB31A0A0031E934 /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLFramework.h; path = Utilities/GTLFramework.h; sourceTree = "<group>"; };
+		F47231091BB31A0A0031E934 /* GTLFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLFramework.m; path = Utilities/GTLFramework.m; sourceTree = "<group>"; };
+		F472310A1BB31A0A0031E934 /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLJSONParser.h; path = Utilities/GTLJSONParser.h; sourceTree = "<group>"; };
+		F472310B1BB31A0A0031E934 /* GTLJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLJSONParser.m; path = Utilities/GTLJSONParser.m; sourceTree = "<group>"; };
+		F472310C1BB31A0A0031E934 /* GTLTargetNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTargetNamespace.h; path = Utilities/GTLTargetNamespace.h; sourceTree = "<group>"; };
+		F472310D1BB31A0A0031E934 /* GTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUtilities.h; path = Utilities/GTLUtilities.h; sourceTree = "<group>"; };
+		F472310E1BB31A0A0031E934 /* GTLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUtilities.m; path = Utilities/GTLUtilities.m; sourceTree = "<group>"; };
+		F472310F1BB31A0A0031E934 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBase64.h; path = Utilities/GTLBase64.h; sourceTree = "<group>"; };
+		F47231101BB31A0A0031E934 /* GTLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBase64.m; path = Utilities/GTLBase64.m; sourceTree = "<group>"; };
+		F47231121BB31A0A0031E934 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherService.h; path = HTTPFetcher/GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		F47231131BB31A0A0031E934 /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherService.m; path = HTTPFetcher/GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		F47231141BB31A0A0031E934 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = HTTPFetcher/GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		F47231151BB31A0A0031E934 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = HTTPFetcher/GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		F47231161BB31A0A0031E934 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = HTTPFetcher/GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		F47231171BB31A0A0031E934 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = HTTPFetcher/GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		F47231181BB31A0A0031E934 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = HTTPFetcher/GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		F47231191BB31A0A0031E934 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = HTTPFetcher/GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		F472311A1BB31A0A0031E934 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPUploadFetcher.h; path = HTTPFetcher/GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		F472311B1BB31A0A0031E934 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPUploadFetcher.m; path = HTTPFetcher/GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		F472311C1BB31A0A0031E934 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = HTTPFetcher/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		F472311D1BB31A0A0031E934 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = HTTPFetcher/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		F472311E1BB31A0A0031E934 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = HTTPFetcher/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		F472311F1BB31A0A0031E934 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = HTTPFetcher/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		F47231201BB31A0A0031E934 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = HTTPFetcher/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		F47231211BB31A0A0031E934 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = HTTPFetcher/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B69D0E71BA2158A0073FB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D0FF1BA2158B0073FB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1131BA2D38D0073FB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8554D61BA5AEC50093F6CB /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B69D0E11BA2158A0073FB52 = {
+			isa = PBXGroup;
+			children = (
+				8B8554D51BA5AEC50093F6CB /* MapKit.framework */,
+				F4422AE51BB31CC800E8EA81 /* SessionFetcher */,
+				F47230E31BB318D90031E934 /* googleEndpoint */,
+				8BBFCA221BA442DB0025A9C1 /* data */,
+				8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */,
+				8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */,
+				8B69D1171BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension */,
+				8B69D1271BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */,
+				8B69D0EB1BA2158A0073FB52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B69D0EB1BA2158A0073FB52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D0EA1BA2158A0073FB52 /* flypostr.app */,
+				8B69D1021BA2158B0073FB52 /* flypostr.xctest */,
+				8B69D1161BA2D38D0073FB52 /* flypostr.appex */,
+				8B69D1231BA2D38E0073FB52 /* flypostr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B69D0EC1BA2158A0073FB52 /* hackathon2015-ios */ = {
+			isa = PBXGroup;
+			children = (
+				8BBFCA1F1BA424210025A9C1 /* Cell */,
+				8B69D0EF1BA2158A0073FB52 /* AppDelegate.swift */,
+				8BBFCA321BA45BA40025A9C1 /* MapViewController.swift */,
+				8B69D0F41BA2158A0073FB52 /* ViewController.swift */,
+				8B8554D21BA574D50093F6CB /* EntryViewController.swift */,
+				8B7663DC1BA4E0DD0042CD0E /* AddEntryController.swift */,
+				8B69D0F61BA2158A0073FB52 /* Main.storyboard */,
+				8B69D0F91BA2158A0073FB52 /* Images.xcassets */,
+				8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */,
+				8B69D0F11BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld */,
+				8B69D0ED1BA2158A0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-ios";
+			sourceTree = "<group>";
+		};
+		8B69D0ED1BA2158A0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D0EE1BA2158A0073FB52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B69D1051BA2158B0073FB52 /* hackathon2015-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1081BA2158B0073FB52 /* hackathon2015_iosTests.swift */,
+				8B69D1061BA2158B0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-iosTests";
+			sourceTree = "<group>";
+		};
+		8B69D1061BA2158B0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1071BA2158B0073FB52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B69D1171BA2D38E0073FB52 /* hackathon2015-ios WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D11B1BA2D38E0073FB52 /* InterfaceController.swift */,
+				8B69D11D1BA2D38E0073FB52 /* NotificationController.swift */,
+				8B69D11F1BA2D38E0073FB52 /* Images.xcassets */,
+				8B69D1181BA2D38E0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-ios WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8B69D1181BA2D38E0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1191BA2D38E0073FB52 /* Info.plist */,
+				8B69D11A1BA2D38E0073FB52 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B69D1271BA2D38E0073FB52 /* hackathon2015-ios WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */,
+				8B69D12D1BA2D38E0073FB52 /* Images.xcassets */,
+				8B69D1281BA2D38E0073FB52 /* Supporting Files */,
+			);
+			path = "hackathon2015-ios WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B69D1281BA2D38E0073FB52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B69D1291BA2D38E0073FB52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BBFCA1F1BA424210025A9C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BBFCA201BA424430025A9C1 /* CustomCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		8BBFCA221BA442DB0025A9C1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8BBFCA231BA442EC0025A9C1 /* DataManager.swift */,
+				8BBFCA301BA44DA40025A9C1 /* Poi.swift */,
+				8BBFCA3C1BA466280025A9C1 /* ServerManager.swift */,
+				8BBFCA3E1BA467710025A9C1 /* ConnectionResult.swift */,
+				8BBFCA401BA467CB0025A9C1 /* ObjectType.swift */,
+				8BBFCA421BA468940025A9C1 /* ServerManagerDelegate.swift */,
+				8BBFCA441BA4A3FC0025A9C1 /* DataManagerDelegate.swift */,
+				8B7663DA1BA4ABDF0042CD0E /* AppDelegate2.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		F4422ADF1BB31A5200E8EA81 /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				F4422ADC1BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.h */,
+				F4422ADD1BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m */,
+				F4422ADE1BB31A5200E8EA81 /* GTMOAuth2ViewTouch.xib */,
+			);
+			name = Touch;
+			path = "../google-api-objectivec-client-read-only/Source";
+			sourceTree = "<group>";
+		};
+		F4422AE51BB31CC800E8EA81 /* SessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				F4422AE91BB31CFA00E8EA81 /* GTMSessionFetcherService.h */,
+				F4422AEA1BB31CFA00E8EA81 /* GTMSessionFetcherService.m */,
+				F4422AE61BB31CE000E8EA81 /* GTMSessionFetcher.h */,
+				F4422AE71BB31CE000E8EA81 /* GTMSessionFetcher.m */,
+			);
+			name = SessionFetcher;
+			sourceTree = "<group>";
+		};
+		F47230E31BB318D90031E934 /* googleEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				F4422B451BB3227E00E8EA81 /* GTLServicePoiApi.h */,
+				F4422B461BB3227E00E8EA81 /* GTLServicePoiApi.m */,
+				F4422B421BB3225300E8EA81 /* GTLQueryPoiApi.h */,
+				F4422B431BB3225300E8EA81 /* GTLQueryPoiApi.m */,
+				F4422B3F1BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.h */,
+				F4422B401BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m */,
+				F4422B3C1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.h */,
+				F4422B3D1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m */,
+				F4422B2D1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.h */,
+				F4422B2E1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m */,
+				F4422B0A1BB320D500E8EA81 /* GTLPoiApi.h */,
+				F4422B0C1BB320F900E8EA81 /* GTLPoiApiConstants.h */,
+				F4422B0D1BB320F900E8EA81 /* GTLPoiApiConstants.m */,
+				F4422B271BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.h */,
+				F4422B281BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m */,
+				F4422B2A1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.h */,
+				F4422B2B1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m */,
+				F472312F1BB31A180031E934 /* OAuth2 */,
+				F47231111BB31A0A0031E934 /* Utilities */,
+				F47231221BB31A0A0031E934 /* HTTPFetcher */,
+				F47230FE1BB319890031E934 /* Objects */,
+				F47230E51BB3192B0031E934 /* GTLDefines.h */,
+				F47230E41BB3192A0031E934 /* flypostr-Bridging-Header.h */,
+			);
+			name = googleEndpoint;
+			sourceTree = "<group>";
+		};
+		F47230FE1BB319890031E934 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F47230EC1BB319890031E934 /* GTLObject.h */,
+				F47230ED1BB319890031E934 /* GTLObject.m */,
+				F47230EE1BB319890031E934 /* GTLQuery.h */,
+				F47230EF1BB319890031E934 /* GTLQuery.m */,
+				F47230F01BB319890031E934 /* GTLBatchQuery.h */,
+				F47230F11BB319890031E934 /* GTLBatchQuery.m */,
+				F47230F21BB319890031E934 /* GTLService.h */,
+				F47230F31BB319890031E934 /* GTLService.m */,
+				F47230F41BB319890031E934 /* GTLBatchResult.h */,
+				F47230F51BB319890031E934 /* GTLBatchResult.m */,
+				F47230F61BB319890031E934 /* GTLUploadParameters.h */,
+				F47230F71BB319890031E934 /* GTLUploadParameters.m */,
+				F47230F81BB319890031E934 /* GTLDateTime.h */,
+				F47230F91BB319890031E934 /* GTLDateTime.m */,
+				F47230FA1BB319890031E934 /* GTLErrorObject.h */,
+				F47230FB1BB319890031E934 /* GTLErrorObject.m */,
+				F47230FC1BB319890031E934 /* GTLRuntimeCommon.h */,
+				F47230FD1BB319890031E934 /* GTLRuntimeCommon.m */,
+			);
+			name = Objects;
+			path = "../google-api-objectivec-client-read-only/Source";
+			sourceTree = "<group>";
+		};
+		F47231111BB31A0A0031E934 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F47231081BB31A0A0031E934 /* GTLFramework.h */,
+				F47231091BB31A0A0031E934 /* GTLFramework.m */,
+				F472310A1BB31A0A0031E934 /* GTLJSONParser.h */,
+				F472310B1BB31A0A0031E934 /* GTLJSONParser.m */,
+				F472310C1BB31A0A0031E934 /* GTLTargetNamespace.h */,
+				F472310D1BB31A0A0031E934 /* GTLUtilities.h */,
+				F472310E1BB31A0A0031E934 /* GTLUtilities.m */,
+				F472310F1BB31A0A0031E934 /* GTLBase64.h */,
+				F47231101BB31A0A0031E934 /* GTLBase64.m */,
+			);
+			name = Utilities;
+			path = "../google-api-objectivec-client-read-only/Source";
+			sourceTree = "<group>";
+		};
+		F47231221BB31A0A0031E934 /* HTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				F47231121BB31A0A0031E934 /* GTMHTTPFetcherService.h */,
+				F47231131BB31A0A0031E934 /* GTMHTTPFetcherService.m */,
+				F47231141BB31A0A0031E934 /* GTMHTTPFetcher.h */,
+				F47231151BB31A0A0031E934 /* GTMHTTPFetcher.m */,
+				F47231161BB31A0A0031E934 /* GTMHTTPFetcherLogging.h */,
+				F47231171BB31A0A0031E934 /* GTMHTTPFetcherLogging.m */,
+				F47231181BB31A0A0031E934 /* GTMHTTPFetchHistory.h */,
+				F47231191BB31A0A0031E934 /* GTMHTTPFetchHistory.m */,
+				F472311A1BB31A0A0031E934 /* GTMHTTPUploadFetcher.h */,
+				F472311B1BB31A0A0031E934 /* GTMHTTPUploadFetcher.m */,
+				F472311C1BB31A0A0031E934 /* GTMGatherInputStream.h */,
+				F472311D1BB31A0A0031E934 /* GTMGatherInputStream.m */,
+				F472311E1BB31A0A0031E934 /* GTMMIMEDocument.h */,
+				F472311F1BB31A0A0031E934 /* GTMMIMEDocument.m */,
+				F47231201BB31A0A0031E934 /* GTMReadMonitorInputStream.h */,
+				F47231211BB31A0A0031E934 /* GTMReadMonitorInputStream.m */,
+			);
+			name = HTTPFetcher;
+			path = "../google-api-objectivec-client-read-only/Source";
+			sourceTree = "<group>";
+		};
+		F472312F1BB31A180031E934 /* OAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				F4422ADF1BB31A5200E8EA81 /* Touch */,
+				F47230E61BB3192B0031E934 /* GTMOAuth2Authentication.h */,
+				F47230E71BB3192B0031E934 /* GTMOAuth2Authentication.m */,
+				F47230E81BB3192B0031E934 /* GTMOAuth2SignIn.h */,
+				F47230E91BB3192B0031E934 /* GTMOAuth2SignIn.m */,
+			);
+			name = OAuth2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B69D0E91BA2158A0073FB52 /* flypostr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D10C1BA2158B0073FB52 /* Build configuration list for PBXNativeTarget "flypostr" */;
+			buildPhases = (
+				8B69D0E61BA2158A0073FB52 /* Sources */,
+				8B69D0E71BA2158A0073FB52 /* Frameworks */,
+				8B69D0E81BA2158A0073FB52 /* Resources */,
+				F4EB5F3E1BB29731008C417C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EB5F3B1BB29730008C417C /* PBXTargetDependency */,
+			);
+			name = flypostr;
+			productName = "hackathon2015-ios";
+			productReference = 8B69D0EA1BA2158A0073FB52 /* flypostr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B69D1011BA2158B0073FB52 /* flypostrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D10F1BA2158B0073FB52 /* Build configuration list for PBXNativeTarget "flypostrTests" */;
+			buildPhases = (
+				8B69D0FE1BA2158B0073FB52 /* Sources */,
+				8B69D0FF1BA2158B0073FB52 /* Frameworks */,
+				8B69D1001BA2158B0073FB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B69D1041BA2158B0073FB52 /* PBXTargetDependency */,
+			);
+			name = flypostrTests;
+			productName = "hackathon2015-iosTests";
+			productReference = 8B69D1021BA2158B0073FB52 /* flypostr.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B69D1151BA2D38D0073FB52 /* flypostr WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D1351BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "flypostr WatchKit Extension" */;
+			buildPhases = (
+				8B69D1121BA2D38D0073FB52 /* Sources */,
+				8B69D1131BA2D38D0073FB52 /* Frameworks */,
+				8B69D1141BA2D38D0073FB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flypostr WatchKit Extension";
+			productName = "hackathon2015-ios WatchKit Extension";
+			productReference = 8B69D1161BA2D38D0073FB52 /* flypostr.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		8B69D1221BA2D38E0073FB52 /* flypostr WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B69D1321BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "flypostr WatchKit App" */;
+			buildPhases = (
+				8B69D1211BA2D38E0073FB52 /* Resources */,
+				F4EB5F3D1BB29731008C417C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EB5F381BB29730008C417C /* PBXTargetDependency */,
+			);
+			name = "flypostr WatchKit App";
+			productName = "hackathon2015-ios WatchKit App";
+			productReference = 8B69D1231BA2D38E0073FB52 /* flypostr.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B69D0E21BA2158A0073FB52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = itcc;
+				TargetAttributes = {
+					8B69D0E91BA2158A0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 62T6KM46DA;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					8B69D1011BA2158B0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = JKSKE56N5U;
+						TestTargetID = 8B69D0E91BA2158A0073FB52;
+					};
+					8B69D1151BA2D38D0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 62T6KM46DA;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
+					};
+					8B69D1221BA2D38E0073FB52 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 62T6KM46DA;
+					};
+				};
+			};
+			buildConfigurationList = 8B69D0E51BA2158A0073FB52 /* Build configuration list for PBXProject "flypostr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B69D0E11BA2158A0073FB52;
+			productRefGroup = 8B69D0EB1BA2158A0073FB52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B69D0E91BA2158A0073FB52 /* flypostr */,
+				8B69D1011BA2158B0073FB52 /* flypostrTests */,
+				8B69D1151BA2D38D0073FB52 /* flypostr WatchKit Extension */,
+				8B69D1221BA2D38E0073FB52 /* flypostr WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B69D0E81BA2158A0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4422AE11BB31A5200E8EA81 /* GTMOAuth2ViewTouch.xib in Resources */,
+				8B69D0F81BA2158A0073FB52 /* Main.storyboard in Resources */,
+				8B69D0FD1BA2158A0073FB52 /* LaunchScreen.xib in Resources */,
+				8B69D0FA1BA2158A0073FB52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1001BA2158B0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1141BA2D38D0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D1391BA2DA490073FB52 /* Images.xcassets in Resources */,
+				8B69D1201BA2D38E0073FB52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1211BA2D38E0073FB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D12C1BA2D38E0073FB52 /* Interface.storyboard in Resources */,
+				8B69D12E1BA2D38E0073FB52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B69D0E61BA2158A0073FB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47231011BB319890031E934 /* GTLBatchQuery.m in Sources */,
+				F47231031BB319890031E934 /* GTLBatchResult.m in Sources */,
+				F47231061BB319890031E934 /* GTLErrorObject.m in Sources */,
+				F47231021BB319890031E934 /* GTLService.m in Sources */,
+				F4422B471BB3227E00E8EA81 /* GTLServicePoiApi.m in Sources */,
+				F47230FF1BB319890031E934 /* GTLObject.m in Sources */,
+				F4422B1C1BB320F900E8EA81 /* GTLPoiApiConstants.m in Sources */,
+				F4422B2F1BB3219D00E8EA81 /* GTLPoiApiPoiDetailBean.m in Sources */,
+				F4422B2C1BB3218900E8EA81 /* GTLPoiApiImageUploadUrlBean.m in Sources */,
+				F47231251BB31A0A0031E934 /* GTLUtilities.m in Sources */,
+				F47231001BB319890031E934 /* GTLQuery.m in Sources */,
+				F47231241BB31A0A0031E934 /* GTLJSONParser.m in Sources */,
+				F47231071BB319890031E934 /* GTLRuntimeCommon.m in Sources */,
+				F4422B291BB3217B00E8EA81 /* GTLPoiApiPoiCreateBean.m in Sources */,
+				F47231051BB319890031E934 /* GTLDateTime.m in Sources */,
+				F47231041BB319890031E934 /* GTLUploadParameters.m in Sources */,
+				F47231231BB31A0A0031E934 /* GTLFramework.m in Sources */,
+				F4422B441BB3225300E8EA81 /* GTLQueryPoiApi.m in Sources */,
+				F4422B3E1BB3223500E8EA81 /* GTLPoiApiPoiOverviewBean.m in Sources */,
+				F4422B411BB3224500E8EA81 /* GTLPoiApiPoiOverviewListBean.m in Sources */,
+				F47231261BB31A0A0031E934 /* GTLBase64.m in Sources */,
+				F47231281BB31A0A0031E934 /* GTMHTTPFetcher.m in Sources */,
+				F472312A1BB31A0A0031E934 /* GTMHTTPFetchHistory.m in Sources */,
+				F472312B1BB31A0A0031E934 /* GTMHTTPUploadFetcher.m in Sources */,
+				F47231291BB31A0A0031E934 /* GTMHTTPFetcherLogging.m in Sources */,
+				F47231271BB31A0A0031E934 /* GTMHTTPFetcherService.m in Sources */,
+				F47230EB1BB3192B0031E934 /* GTMOAuth2SignIn.m in Sources */,
+				F472312D1BB31A0A0031E934 /* GTMMIMEDocument.m in Sources */,
+				F47230EA1BB3192B0031E934 /* GTMOAuth2Authentication.m in Sources */,
+				F4422AE01BB31A5200E8EA81 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				F472312C1BB31A0A0031E934 /* GTMGatherInputStream.m in Sources */,
+				F4422AE81BB31CE000E8EA81 /* GTMSessionFetcher.m in Sources */,
+				F4422AEB1BB31CFA00E8EA81 /* GTMSessionFetcherService.m in Sources */,
+				F472312E1BB31A0A0031E934 /* GTMReadMonitorInputStream.m in Sources */,
+				8BBFCA431BA468940025A9C1 /* ServerManagerDelegate.swift in Sources */,
+				8B7663DB1BA4ABDF0042CD0E /* AppDelegate2.swift in Sources */,
+				8BBFCA411BA467CB0025A9C1 /* ObjectType.swift in Sources */,
+				8BBFCA3D1BA466280025A9C1 /* ServerManager.swift in Sources */,
+				8BBFCA311BA44DA40025A9C1 /* Poi.swift in Sources */,
+				8BBFCA3F1BA467710025A9C1 /* ConnectionResult.swift in Sources */,
+				8B69D0F51BA2158A0073FB52 /* ViewController.swift in Sources */,
+				8BBFCA241BA442EC0025A9C1 /* DataManager.swift in Sources */,
+				8B69D0F01BA2158A0073FB52 /* AppDelegate.swift in Sources */,
+				8BBFCA451BA4A3FC0025A9C1 /* DataManagerDelegate.swift in Sources */,
+				8B7663DD1BA4E0DD0042CD0E /* AddEntryController.swift in Sources */,
+				8B8554D31BA574D50093F6CB /* EntryViewController.swift in Sources */,
+				8BBFCA211BA424430025A9C1 /* CustomCell.swift in Sources */,
+				8B69D0F31BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld in Sources */,
+				8BBFCA331BA45BA40025A9C1 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D0FE1BA2158B0073FB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D1091BA2158B0073FB52 /* hackathon2015_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B69D1121BA2D38D0073FB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B69D11E1BA2D38E0073FB52 /* NotificationController.swift in Sources */,
+				8B69D11C1BA2D38E0073FB52 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B69D1041BA2158B0073FB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B69D0E91BA2158A0073FB52 /* flypostr */;
+			targetProxy = 8B69D1031BA2158B0073FB52 /* PBXContainerItemProxy */;
+		};
+		F4EB5F381BB29730008C417C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B69D1151BA2D38D0073FB52 /* flypostr WatchKit Extension */;
+			targetProxy = F4EB5F371BB29730008C417C /* PBXContainerItemProxy */;
+		};
+		F4EB5F3B1BB29730008C417C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B69D1221BA2D38E0073FB52 /* flypostr WatchKit App */;
+			targetProxy = F4EB5F3A1BB29730008C417C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B69D0F61BA2158A0073FB52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B69D0F71BA2158A0073FB52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B69D0FB1BA2158A0073FB52 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B69D0FC1BA2158A0073FB52 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8B69D12A1BA2D38E0073FB52 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B69D12B1BA2D38E0073FB52 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B69D10A1BA2158B0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "80b7d567-f922-4a41-ae25-8628e390d33c";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B69D10B1BA2158B0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "80b7d567-f922-4a41-ae25-8628e390d33c";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B69D10D1BA2158B0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "80b7d567-f922-4a41-ae25-8628e390d33c";
+				SWIFT_OBJC_BRIDGING_HEADER = "flypostr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B69D10E1BA2158B0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = "hackathon2015-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "80b7d567-f922-4a41-ae25-8628e390d33c";
+				SWIFT_OBJC_BRIDGING_HEADER = "flypostr-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8B69D1101BA2158B0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hackathon2015-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "li.itcc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flypostr.app/flypostr";
+			};
+			name = Debug;
+		};
+		8B69D1111BA2158B0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hackathon2015-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "li.itcc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flypostr.app/flypostr";
+			};
+			name = Release;
+		};
+		8B69D1331BA2D38E0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr.watchkitapp;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "6c39a848-6a65-4703-899d-a90fa52c397a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8B69D1341BA2D38E0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = hackathon2015_ios_WatchKit_Extension;
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr.watchkitapp;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "6c39a848-6a65-4703-899d-a90fa52c397a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8B69D1361BA2D38E0073FB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Simon Meier (9SHZR53D8M)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "48d8f250-b3eb-4f39-902e-4cd79347db32";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8B69D1371BA2D38E0073FB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = "hackathon2015-ios WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.itcc.flypostr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = flypostr;
+				PROVISIONING_PROFILE = "48d8f250-b3eb-4f39-902e-4cd79347db32";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B69D0E51BA2158A0073FB52 /* Build configuration list for PBXProject "flypostr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D10A1BA2158B0073FB52 /* Debug */,
+				8B69D10B1BA2158B0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B69D10C1BA2158B0073FB52 /* Build configuration list for PBXNativeTarget "flypostr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D10D1BA2158B0073FB52 /* Debug */,
+				8B69D10E1BA2158B0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B69D10F1BA2158B0073FB52 /* Build configuration list for PBXNativeTarget "flypostrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D1101BA2158B0073FB52 /* Debug */,
+				8B69D1111BA2158B0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B69D1321BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "flypostr WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D1331BA2D38E0073FB52 /* Debug */,
+				8B69D1341BA2D38E0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B69D1351BA2D38E0073FB52 /* Build configuration list for PBXNativeTarget "flypostr WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B69D1361BA2D38E0073FB52 /* Debug */,
+				8B69D1371BA2D38E0073FB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B69D0F11BA2158A0073FB52 /* hackathon2015_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B69D0F21BA2158A0073FB52 /* hackathon2015_ios.xcdatamodel */,
+			);
+			currentVersion = 8B69D0F21BA2158A0073FB52 /* hackathon2015_ios.xcdatamodel */;
+			path = hackathon2015_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8B69D0E21BA2158A0073FB52 /* Project object */;
+}
