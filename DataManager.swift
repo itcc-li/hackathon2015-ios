@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-/*
-var jsonArray =  "[{ \"id\" : 1, \"name\":\"Grauspitz\",\"name\":\"Grauspitz\",\"description\":\"Der höchste Berg in Liechtenstein\",\"longitude\":9.581263,\"latitude\":47.052934}]"
-*/
 
 class DataManager : DataManagerDelegate{
     var appDelegate2 : AppDelegate2
@@ -33,7 +30,10 @@ class DataManager : DataManagerDelegate{
         longitude:9.0,maxCount: 100)
         service.executeQuery(query, completionHandler:
             { (ticket: GTLServiceTicket!, object: AnyObject!, error: NSError!) in
-                print("Data received")
+                if object != nil {
+                    let test = object as! GTLPoiApiPoiOverviewListBean
+                    print(test)
+                }
                 //NSArray *items = [object items];
                 // Do something with items.
                 
